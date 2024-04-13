@@ -1,5 +1,4 @@
 import { QUERIES } from "@/constants";
-// import avatar from "/public/images/avatar.webp";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
@@ -22,7 +21,7 @@ function FirstGrid() {
             <Name>Trinh The Son</Name>
             <Badge
               src={verified}
-              alt="Verified badge"
+              alt="verified badge"
             ></Badge>
           </NameWrapper>
           <TwitterLink>@ttsoncs</TwitterLink>

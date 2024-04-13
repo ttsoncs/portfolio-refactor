@@ -1,6 +1,7 @@
 "use client";
 
 import { QUERIES } from "@/constants";
+import EighthGrid from "./EighthGrid";
 import FirstGrid from "./FirstGrid";
 import React from "react";
 import SecondGrid from "./SecondGrid";
@@ -13,14 +14,13 @@ function HomeGrid() {
       <SecondGrid />
       <Box3>3</Box3>
       <Box4>4</Box4>
-      {/*
-      <Box5>5</Box5>
+      <EighthGrid>8</EighthGrid>
+      {/* <Box5>5</Box5>
       <Box6>6</Box6>
       <Box7>7</Box7>
-      <Box8>8</Box8>
       <Box9>9</Box9>
       <Box10>10</Box10>
-      <Box11>11</Box11> */}
+      <Box11>11</Box11>  */}
     </Wrapper>
   );
 }
@@ -91,17 +91,6 @@ const Box7 = styled.div`
   border: 1px solid var(--color-border);
   grid-column: 5/9;
   grid-row: 3/9;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    grid-column: initial;
-    grid-row: initial;
-  }
-`;
-
-const Box8 = styled.div`
-  border: 1px solid var(--color-border);
-  grid-column: 9/13;
-  grid-row: 4/6;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: initial;
