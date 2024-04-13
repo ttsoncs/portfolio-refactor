@@ -31,10 +31,11 @@ const StyledLink = styled(Link)`
 const Badge = styled.div`
   color: var(--color-primary-text);
   font-size: ${12 / 16}rem;
-  background-color: var(--color-border);
+  background-color: var(--color-background);
   align-self: flex-start;
-  padding: 2px 6px;
-  border-radius: 4px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
 `;
 
 export default Logo;
