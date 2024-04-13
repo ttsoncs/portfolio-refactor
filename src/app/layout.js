@@ -1,4 +1,5 @@
 import Body from "@/components/Background";
+import Footer from "@/components/Footer";
 import GlobalStyles from "@/components/GlobalStyles";
 import Header from "@/components/Header";
 import localFont from "next/font/local";
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
           <MaxWidthWrapper>
             <Header />
             {children}
+            <Footer />
           </MaxWidthWrapper>
           <GlobalStyles />
         </Body>

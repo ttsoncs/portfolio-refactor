@@ -1,6 +1,7 @@
 "use client";
 
 import { DAYS } from "@/constants";
+import { QUERIES } from "@/constants";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
@@ -9,13 +10,13 @@ function Footer() {
   return (
     <Wrapper>
       <LinkWrapper>
-        <LinkItem href="/terms">Terms of Use</LinkItem>
-        <LinkItem href="/privacy">Privacy Policy</LinkItem>
+        <StyledLink href="/terms">Terms of Use</StyledLink>
+        <StyledLink href="/privacy">Privacy Policy</StyledLink>
       </LinkWrapper>
-      <TextWrapper>© 2024 Trinh The Son. All rights reserved.</TextWrapper>
-      <TextWrapper>
+      <Text>© 2024 Trinh The Son. All rights reserved.</Text>
+      <Text>
         Enjoy the rest of your {DAYS[new Date().getDay()]}!
-      </TextWrapper>
+      </Text>
     </Wrapper>
   );
 }
@@ -23,30 +24,28 @@ function Footer() {
 const Wrapper = styled.footer`
   display: none;
 
-  @media ${(props) => props.theme.queries.phoneAndSmaller} {
+  @media ${QUERIES.phoneAndSmaller} {
     align-items: center;
     color: var(--color-secondary-text);
     display: flex;
     flex-direction: column;
     font-size: ${14 / 16}rem;
     justify-content: center;
-    margin-inline: 28px;
-    max-width: 1500px;
     padding-block: 32px;
   }
 `;
 
-const TextWrapper = styled.div`
+const Text = styled.p`
   text-align: center;
 `;
 
 const LinkWrapper = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 24px;
   margin-bottom: 12px;
 `;
 
-const LinkItem = styled(Link)`
+const StyledLink = styled(Link)`
   color: var(--color-secondary-text);
   text-decoration: none;
 `;
