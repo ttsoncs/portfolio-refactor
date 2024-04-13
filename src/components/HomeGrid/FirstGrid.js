@@ -1,5 +1,5 @@
 import { QUERIES } from "@/constants";
-import avatar from "/public/images/avatar.webp";
+// import avatar from "/public/images/avatar.webp";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
@@ -11,7 +11,9 @@ function FirstGrid() {
       <FirstBox>
         <AvatarWrapper>
           <StyledImage
-            src={avatar}
+            src="/images/avatar.webp"
+            height={100}
+            width={100}
             alt="avatar"
           />
         </AvatarWrapper>
