@@ -56,7 +56,7 @@ const StyledLink = styled(Link)`
   font-size: ${28 / 16}rem;
   font-weight: var(--font-weight-medium);
   max-width: 75%;
-  padding: 16px;
+  padding: 20px;
   padding-left: 32px;
   text-decoration: none;
   text-transform: capitalize;
