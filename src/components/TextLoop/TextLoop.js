@@ -46,7 +46,7 @@ function TextLoop() {
         initial="enter"
         key={index}
         transition={{
-          opacity: { duration: 1, delay: 1 },
+          opacity: { duration: 0.75, delay: 1 },
         }}
         variants={variants}
       >
