@@ -23,6 +23,7 @@ const variants = {
 
 function TextLoop() {
   const [index, setIndex] = React.useState(0);
+  const [isInitial, setIsInitial] = React.useState(true);
 
   React.useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -38,15 +39,19 @@ function TextLoop() {
     };
   }, [index, setIndex]);
 
+  React.useEffect(() => {
+    setIsInitial(false);
+  }, []);
+
   return (
     <AnimatePresence>
       <Wrapper
         animate="center"
         exit="exit"
-        initial="enter"
+        initial={isInitial ? "false" : "enter"}
         key={index}
         transition={{
-          opacity: { duration: 0.75, delay: 1 },
+          opacity: { duration: 0.5, delay: 1.5 },
         }}
         variants={variants}
       >
