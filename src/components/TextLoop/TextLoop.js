@@ -6,15 +6,18 @@ import styled from "styled-components";
 
 const variants = {
   enter: {
-    y: 10,
     opacity: 0,
   },
   center: {
-    y: 0,
     opacity: 1,
   },
   exit: {
+    y: -20,
     opacity: 0,
+    transition: {
+      type: "spring",
+      damping: 40,
+    },
   },
 };
 
@@ -28,7 +31,7 @@ function TextLoop() {
         next = 0;
       }
       setIndex(next);
-    }, 4000);
+    }, 6000);
 
     return () => {
       window.clearTimeout(timeoutId);
@@ -43,7 +46,7 @@ function TextLoop() {
         initial="enter"
         key={index}
         transition={{
-          opacity: { duration: 0.3 },
+          opacity: { duration: 1, delay: 1 },
         }}
         variants={variants}
       >

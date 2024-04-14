@@ -11,9 +11,8 @@ function FirstGrid() {
         <AvatarWrapper>
           <StyledImage
             src="/images/avatar.webp"
-            height={128}
-            width={128}
-            alt="avatar"
+            fill={true}
+            alt="Picture of Trinh The Son"
           />
         </AvatarWrapper>
         <Information>
@@ -21,7 +20,7 @@ function FirstGrid() {
             <Name>Trinh The Son</Name>
             <Badge
               src={verified}
-              alt="verified badge"
+              alt="Verified badge"
             ></Badge>
           </NameWrapper>
           <WorkStatus>Available for work</WorkStatus>
