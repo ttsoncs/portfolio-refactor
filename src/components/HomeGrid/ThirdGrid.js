@@ -1,19 +1,9 @@
 import { QUERIES } from "@/constants";
-import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
 function ThirdGrid() {
-  return (
-    <Wrapper>
-      <StyledImage
-        src="/images/daisy.webp"
-        height={512}
-        width={512}
-        alt="daisy flower"
-      ></StyledImage>
-    </Wrapper>
-  );
+  return <Wrapper></Wrapper>;
 }
 
 const Wrapper = styled.section`
@@ -30,11 +20,6 @@ const Wrapper = styled.section`
     grid-column: 1/2;
     grid-row: initial;
   }
-`;
-
-const StyledImage = styled(Image)`
-  height: 100%;
-  width: 100%;
 `;
 
 export default ThirdGrid;

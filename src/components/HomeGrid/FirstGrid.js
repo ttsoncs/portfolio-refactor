@@ -24,7 +24,7 @@ function FirstGrid() {
               alt="verified badge"
             ></Badge>
           </NameWrapper>
-          <TwitterLink>@ttsoncs</TwitterLink>
+          <TwitterLink>Available for work</TwitterLink>
         </Information>
       </FirstBox>
       <SecondBox>
@@ -118,12 +118,12 @@ const Badge = styled(Image)`
 `;
 
 const TwitterLink = styled.p`
-  color: var(--color-secondary-text);
-  font-size: ${18 / 16}rem;
+  color: var(--color-quaternary);
+  font-size: ${14 / 16}rem;
   line-height: 1.25;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${16 / 16}rem;
+    font-size: ${14 / 16}rem;
   }
 `;
 
