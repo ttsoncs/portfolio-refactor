@@ -9,21 +9,16 @@ const variants = {
     opacity: 0,
   },
   center: {
+    y: 0,
     opacity: 1,
   },
   exit: {
-    y: -20,
     opacity: 0,
-    transition: {
-      type: "spring",
-      damping: 40,
-    },
   },
 };
 
 function TextLoop() {
   const [index, setIndex] = React.useState(0);
-  const [isInitial, setIsInitial] = React.useState(true);
 
   React.useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -32,26 +27,22 @@ function TextLoop() {
         next = 0;
       }
       setIndex(next);
-    }, 6000);
+    }, 4000);
 
     return () => {
       window.clearTimeout(timeoutId);
     };
   }, [index, setIndex]);
 
-  React.useEffect(() => {
-    setIsInitial(false);
-  }, []);
-
   return (
     <AnimatePresence>
       <Wrapper
         animate="center"
         exit="exit"
-        initial={isInitial ? "false" : "enter"}
+        initial="enter"
         key={index}
         transition={{
-          opacity: { duration: 0.5, delay: 1.5 },
+          opacity: { duration: 0.3 },
         }}
         variants={variants}
       >
