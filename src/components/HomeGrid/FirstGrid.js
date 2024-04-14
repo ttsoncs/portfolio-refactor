@@ -11,8 +11,8 @@ function FirstGrid() {
         <AvatarWrapper>
           <StyledImage
             src="/images/avatar.webp"
-            height={100}
-            width={100}
+            height={128}
+            width={128}
             alt="avatar"
           />
         </AvatarWrapper>
