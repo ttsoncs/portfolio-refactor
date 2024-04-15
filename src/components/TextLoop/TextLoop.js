@@ -11,7 +11,7 @@ const variants = {
   center: {
     opacity: 1,
     transition: {
-      opacity: { duration: 1.5, delay: 1.5, },
+      opacity: { duration: 2, delay: 1.5, },
     },
   },
   exit: {
@@ -55,7 +55,7 @@ function TextLoop() {
 }
 
 const Wrapper = styled(motion.p)`
-  color: var(--color-secondary-text);
+  color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-medium);
   height: fit-content;
