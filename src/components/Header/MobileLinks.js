@@ -10,14 +10,14 @@ const variants = {
     x: 0,
     opacity: 1,
     transition: {
-      x: { stiffness: 100, velocity: -100 },
+      x: { stiffness: 100 },
     },
   },
   closed: {
     x: 50,
     opacity: 0,
     transition: {
-      x: { stiffness: 100, velocity: -100 },
+      x: { stiffness: 100 },
     },
   },
 };

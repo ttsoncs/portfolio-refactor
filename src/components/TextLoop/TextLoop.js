@@ -6,14 +6,24 @@ import styled from "styled-components";
 
 const variants = {
   enter: {
+    y: 20,
     opacity: 0,
   },
   center: {
     y: 0,
     opacity: 1,
+    transition: {
+      opacity: { duration: 0.5 },
+      y: { duration: 0.75 },
+    },
   },
   exit: {
+    y: -50,
     opacity: 0,
+    transition: {
+      opacity: { duration: 0.5 },
+      y: { duration: 0.75 },
+    },
   },
 };
 
@@ -41,9 +51,10 @@ function TextLoop() {
         exit="exit"
         initial="enter"
         key={index}
-        transition={{
-          opacity: { duration: 0.3 },
-        }}
+        // transition={{
+        //   opacity: { duration: 0.5 },
+        //   y: { duration: 0.75 },
+        // }}
         variants={variants}
       >
         {TEXTS[index]}
