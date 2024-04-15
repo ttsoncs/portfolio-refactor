@@ -9,7 +9,6 @@ const variants = {
   open: {
     opacity: 1,
     transition: {
-      x: { velocity: 100 },
       duration: 0.3,
       staggerChildren: 0.06,
       delayChildren: 0.15,
@@ -18,7 +17,6 @@ const variants = {
   closed: {
     opacity: 0,
     transition: {
-      x: { velocity: 100 },
       duration: 0.6,
       staggerChildren: 0.06,
       staggerDirection: -1,
