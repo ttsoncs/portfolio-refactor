@@ -47,10 +47,6 @@ const MaxWidthWrapper = styled.header`
   z-index: 1;
   top: 0px;
   width: 100%;
-
-  /* &::before {
-    backdrop-filter: brightness(100%) blur(10px);
-  } */
 `;
 
 const Wrapper = styled.div`

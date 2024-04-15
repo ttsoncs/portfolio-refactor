@@ -58,11 +58,11 @@ const Wrapper = styled(motion.nav)`
     position: fixed;
 
     background-image: radial-gradient(
-      hsl(0deg 0% 0% / 0) 1px,
+      transparent 1px,
       var(--color-background) 1px
     );
     background-size: 4px 4px;
-    backdrop-filter: brightness(100%) blur(5px);
+    backdrop-filter: blur(10px);
   }
 `;
 
