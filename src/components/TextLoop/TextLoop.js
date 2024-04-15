@@ -3,6 +3,7 @@ import { QUERIES } from "@/constants";
 import { TEXTS } from "@/constants";
 import React from "react";
 import styled from "styled-components";
+import localFont from "next/font/local";
 
 const variants = {
   enter: {
@@ -11,7 +12,7 @@ const variants = {
   center: {
     opacity: 1,
     transition: {
-      opacity: { duration: 2, delay: 1.5, },
+      opacity: { duration: 2, delay: 1.5 },
     },
   },
   exit: {
@@ -21,6 +22,16 @@ const variants = {
     },
   },
 };
+
+const lotte = localFont({
+  src: [
+    {
+      path: "../../../public/fonts/LiebeLotte-Bold.woff2",
+      weight: "700",
+    },
+  ],
+  display: "fallback",
+});
 
 function TextLoop() {
   const [index, setIndex] = React.useState(0);
@@ -47,6 +58,7 @@ function TextLoop() {
         initial="enter"
         key={index}
         variants={variants}
+        className={lotte.className}
       >
         {TEXTS[index]}
       </Wrapper>
@@ -56,7 +68,7 @@ function TextLoop() {
 
 const Wrapper = styled(motion.p)`
   color: var(--color-primary-text);
-  font-size: ${48 / 16}rem;
+  font-size: ${72 / 16}rem;
   font-weight: var(--font-weight-medium);
   height: fit-content;
   inset: 0;
@@ -65,7 +77,7 @@ const Wrapper = styled(motion.p)`
   width: fit-content;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${32 / 16}rem;
+    font-size: ${56 / 16}rem;
   }
 `;
 
