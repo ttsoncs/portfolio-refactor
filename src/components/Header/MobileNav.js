@@ -51,12 +51,11 @@ const Wrapper = styled(motion.nav)`
 
   @media ${QUERIES.phoneAndSmaller} {
     background-image: radial-gradient(
-      transparent 1px,
+      var(--color-box-background) 1px,
       var(--color-background) 1px
     );
     background-size: 4px 4px;
-    backdrop-filter: blur(8px);
-    background-color: transparent;
+    background-color: var(--color-background);
     display: flex;
     flex-direction: column;
     inset: 0;

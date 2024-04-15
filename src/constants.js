@@ -7,7 +7,6 @@ export const COLORS = {
   black: {
     primary: "hsl(0deg 0% 0%)",
     secondary: "hsl(0deg 0% 1%)",
-    tertiary: "hsl(0deg 0% 0% / 0.9)",
   },
   primary: "hsl(197deg 100% 43%)",
   secondary: "hsl(269deg 65% 51%)",

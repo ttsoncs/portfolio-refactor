@@ -43,7 +43,6 @@ const GlobalStyles = createGlobalStyle`
     --color-secondary-text: ${COLORS.white["secondary"]};
     --color-background: ${COLORS.black["primary"]};
     --color-box-background: ${COLORS.black["secondary"]};
-    --color-nav-background: ${COLORS.black["tertiary"]};
     --color-border: ${COLORS.white["tertiary"]};
     --color-primary: ${COLORS.primary};
     --color-secondary: ${COLORS.secondary};
