@@ -11,7 +11,7 @@ const variants = {
   center: {
     opacity: 1,
     transition: {
-      opacity: { duration: 1.5, delay: 1, },
+      opacity: { duration: 1.5, delay: 1.5, },
     },
   },
   exit: {
