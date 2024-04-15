@@ -23,10 +23,10 @@ const variants = {
   },
 };
 
-const lotte = localFont({
+const mielle = localFont({
   src: [
     {
-      path: "../../../public/fonts/LiebeLotte-Bold.woff2",
+      path: "../../../public/fonts/MielleCFBold.woff2",
       weight: "700",
     },
   ],
@@ -58,7 +58,7 @@ function TextLoop() {
         initial="enter"
         key={index}
         variants={variants}
-        className={lotte.className}
+        className={mielle.className}
       >
         {TEXTS[index]}
       </Wrapper>
@@ -68,8 +68,8 @@ function TextLoop() {
 
 const Wrapper = styled(motion.p)`
   color: var(--color-primary-text);
-  font-size: ${72 / 16}rem;
-  font-weight: var(--font-weight-medium);
+  font-size: ${48 / 16}rem;
+  font-weight: var(--font-weight-bold);
   height: fit-content;
   inset: 0;
   margin: auto;
@@ -77,7 +77,7 @@ const Wrapper = styled(motion.p)`
   width: fit-content;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${56 / 16}rem;
+    font-size: ${32 / 16}rem;
   }
 `;
 

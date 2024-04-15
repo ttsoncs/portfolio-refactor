@@ -55,7 +55,7 @@ export const DAYS = [
 
 export const TEXTS = [
   "hello",
-  "xin chào",
+  "xin chao",
   "ni hao",
   "annyeonghaseyo",
   "konichiwa",
