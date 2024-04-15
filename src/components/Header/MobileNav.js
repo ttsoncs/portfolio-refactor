@@ -50,19 +50,18 @@ const Wrapper = styled(motion.nav)`
   display: none;
 
   @media ${QUERIES.phoneAndSmaller} {
+    background-image: radial-gradient(
+      transparent 1px,
+      var(--color-background) 1px
+    );
+    background-size: 4px 4px;
+    backdrop-filter: blur(8px);
     background-color: transparent;
     display: flex;
     flex-direction: column;
     inset: 0;
     justify-content: center;
     position: fixed;
-
-    background-image: radial-gradient(
-      transparent 1px,
-      var(--color-background) 1px
-    );
-    background-size: 4px 4px;
-    backdrop-filter: blur(10px);
   }
 `;
 
