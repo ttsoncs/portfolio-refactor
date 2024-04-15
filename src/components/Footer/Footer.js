@@ -32,6 +32,7 @@ const Wrapper = styled.footer`
     font-size: ${14 / 16}rem;
     justify-content: center;
     padding-block: 32px;
+    padding-inline: 28px;
   }
 `;
 

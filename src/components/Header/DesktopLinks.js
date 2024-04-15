@@ -37,8 +37,8 @@ const StyledLink = styled(Link)`
   text-transform: capitalize;
   transition: 300ms ease-out;
 
-  &:not(:first-of-type):hover {
-    border-color: var(--color-secondary-text);
+  &:hover {
+    border-color: var(--color-link);
   }
 `;
 

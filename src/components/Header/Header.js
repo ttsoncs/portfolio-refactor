@@ -55,6 +55,7 @@ const Wrapper = styled.div`
   align-items: baseline;
   display: flex;
   justify-content: space-between;
+  padding-inline: 28px;
   width: 100%;
 
   @media ${QUERIES.phoneAndSmaller} {

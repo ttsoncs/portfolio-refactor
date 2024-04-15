@@ -28,9 +28,10 @@ function HomeGrid() {
 
 const Wrapper = styled.main`
   display: grid;
+  gap: 12px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  gap: 12px;
+  padding-inline: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-template-columns: repeat(2, 1fr);

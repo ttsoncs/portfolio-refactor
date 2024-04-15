@@ -11,7 +11,6 @@ const Wrapper = styled.div`
   margin-inline: auto;
   max-width: 1500px;
   min-height: 100%;
-  padding-inline: 28px;
   position: relative;
 `;
 
