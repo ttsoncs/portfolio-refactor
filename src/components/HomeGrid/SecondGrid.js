@@ -18,6 +18,7 @@ const Wrapper = styled.section`
   grid-column: 5/9;
   grid-row: 1/3;
   position: relative;
+  overflow: hidden;
 
   @media ${QUERIES.phoneAndSmaller} {
     aspect-ratio: 8 / 3;

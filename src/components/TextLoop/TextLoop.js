@@ -58,7 +58,6 @@ function TextLoop() {
         initial="enter"
         key={index}
         variants={variants}
-        className={mielle.className}
       >
         {TEXTS[index]}
       </Wrapper>
@@ -68,16 +67,17 @@ function TextLoop() {
 
 const Wrapper = styled(motion.p)`
   color: var(--color-primary-text);
-  font-size: ${48 / 16}rem;
-  font-weight: var(--font-weight-bold);
+  font-size: ${44 / 16}rem;
+  font-weight: var(--font-weight-medium);
   height: fit-content;
   inset: 0;
   margin: auto;
   position: absolute;
   width: fit-content;
+  white-space: nowrap;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${32 / 16}rem;
+    font-size: ${160 / 16}rem;
   }
 `;
 
