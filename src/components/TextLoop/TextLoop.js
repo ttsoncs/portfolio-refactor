@@ -6,23 +6,18 @@ import styled from "styled-components";
 
 const variants = {
   enter: {
-    y: 20,
     opacity: 0,
   },
   center: {
-    y: 0,
     opacity: 1,
     transition: {
-      opacity: { duration: 0.5 },
-      y: { duration: 0.75 },
+      opacity: { duration: 1.5, delay: 1, },
     },
   },
   exit: {
-    y: -20,
     opacity: 0,
     transition: {
-      opacity: { duration: 0.25 },
-      y: { duration: 0.75 },
+      opacity: { duration: 1 },
     },
   },
 };
@@ -37,7 +32,7 @@ function TextLoop() {
         next = 0;
       }
       setIndex(next);
-    }, 4000);
+    }, 5000);
 
     return () => {
       window.clearTimeout(timeoutId);

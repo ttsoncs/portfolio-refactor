@@ -54,9 +54,6 @@ export const DAYS = [
 ];
 
 export const TEXTS = [
-  "Hello",
-  "Xin chào",
-  "Nǐ hǎo",
-  "Annyeonghaseyo",
-  "Konnichiwa",
+  "hello",
+  "xin chào",
 ];
