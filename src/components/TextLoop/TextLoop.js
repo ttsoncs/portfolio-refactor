@@ -21,7 +21,7 @@ const variants = {
     y: -20,
     opacity: 0,
     transition: {
-      opacity: { duration: 0.5 },
+      opacity: { duration: 0.25 },
       y: { duration: 0.75 },
     },
   },
@@ -51,10 +51,6 @@ function TextLoop() {
         exit="exit"
         initial="enter"
         key={index}
-        // transition={{
-        //   opacity: { duration: 0.5 },
-        //   y: { duration: 0.75 },
-        // }}
         variants={variants}
       >
         {TEXTS[index]}
