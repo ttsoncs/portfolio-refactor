@@ -51,7 +51,7 @@ const Wrapper = styled(motion.nav)`
 
   @media ${QUERIES.phoneAndSmaller} {
     background-image: radial-gradient(
-      var(--color-box-background) 1px,
+      var(--color-dot) 1px,
       var(--color-background) 1px
     );
     background-size: 4px 4px;
