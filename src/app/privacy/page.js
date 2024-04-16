@@ -267,7 +267,6 @@ function Privacy() {
 const MaxWidthWrapper = styled.main`
   margin-inline: auto;
   max-width: 1100px;
-  padding-inline: 28px;
   padding-top: 80px;
 `;
 
@@ -307,7 +306,6 @@ const SubTitle = styled.h2`
 const List = styled.ol`
   list-style-type: upper-alpha;
   margin-bottom: 32px;
-  padding-left: 18px;
 `;
 
 const ListItem = styled.li`
