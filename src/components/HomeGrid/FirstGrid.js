@@ -117,7 +117,7 @@ const Badge = styled(Image)`
 `;
 
 const WorkStatus = styled.p`
-  color: var(--color-quaternary);
+  color: var(--color-secondary-text);
   font-size: ${16 / 16}rem;
   line-height: 1.25;
 
