@@ -306,6 +306,7 @@ const SubTitle = styled.h2`
 const List = styled.ol`
   list-style-type: upper-alpha;
   margin-bottom: 32px;
+  padding-left: 20px;
 `;
 
 const ListItem = styled.li`
