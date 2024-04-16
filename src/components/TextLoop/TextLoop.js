@@ -67,7 +67,7 @@ function TextLoop() {
 
 const Wrapper = styled(motion.p)`
   color: var(--color-primary-text);
-  font-size: ${44 / 16}rem;
+  font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-medium);
   height: fit-content;
   inset: 0;
@@ -77,7 +77,7 @@ const Wrapper = styled(motion.p)`
   white-space: nowrap;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${160 / 16}rem;
+    font-size: ${32 / 16}rem;
   }
 `;
 

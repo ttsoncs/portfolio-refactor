@@ -53,7 +53,4 @@ export const DAYS = [
   "Saturday",
 ];
 
-export const TEXTS = [
-  "hello",
-  "chào",
-];
+export const TEXTS = ["hello", "xin chào"];
