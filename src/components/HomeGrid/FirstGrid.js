@@ -72,7 +72,7 @@ const AvatarWrapper = styled.div`
   border-radius: 50%;
   flex-shrink: 0;
   outline-offset: 4px;
-  outline: 2px solid var(--color-primary);
+  outline: 3px solid var(--color-primary);
   overflow: hidden;
   position: relative;
   transform: scale(0.85);
