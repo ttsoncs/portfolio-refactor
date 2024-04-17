@@ -1,9 +1,18 @@
 import { QUERIES } from "@/constants";
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
+import github from "/public/images/github.svg";
 
 function ThirdGrid() {
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <StyledImage
+        src={github}
+        alt="Github link"
+      />
+    </Wrapper>
+  );
 }
 
 const Wrapper = styled.section`
@@ -13,12 +22,22 @@ const Wrapper = styled.section`
   border: 1px solid var(--color-border);
   grid-column: 9/11;
   grid-row: 1/4;
-  padding: 28px;
+  display: grid;
+  place-content: center;
 
   @media ${QUERIES.phoneAndSmaller} {
-    padding: 24px;
     grid-column: 1/2;
     grid-row: initial;
+  }
+`;
+
+const StyledImage = styled(Image)`
+  height: 80px;
+  width: 80px;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    height: 72px;
+    width: 72px;
   }
 `;
 

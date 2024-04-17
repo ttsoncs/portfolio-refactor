@@ -47,7 +47,7 @@ const Wrapper = styled.section`
   border-radius: 20px;
   border: 1px solid var(--color-border);
   display: grid;
-  gap: 8px;
+  gap: 12px;
   grid-column: 1/5;
   grid-row: 1/5;
   grid-template-rows: repeat(6, 1fr);
