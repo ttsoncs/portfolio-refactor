@@ -81,7 +81,7 @@ const AvatarWrapper = styled.div`
 const StyledImage = styled(Image)`
   inset: 0;
   position: absolute;
-  transform: scale(1);
+  transform: scale(1.5);
 `;
 
 const Information = styled.div`
