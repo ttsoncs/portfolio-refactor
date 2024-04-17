@@ -91,7 +91,7 @@ const Information = styled.div`
 const NameWrapper = styled.div`
   align-items: center;
   display: flex;
-  gap: 4px;
+  gap: 6px;
 `;
 
 const Name = styled.p`
@@ -109,8 +109,8 @@ const Badge = styled(Image)`
   height: 14px;
 
   @media ${QUERIES.phoneAndSmaller} {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
   }
 `;
 
