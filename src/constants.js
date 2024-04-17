@@ -39,7 +39,7 @@ export const LINKS = [
   { title: "home", href: "/" },
   { title: "about", href: "/about" },
   { title: "lab", href: "/lab" },
-  { title: "credit", href: "/credit" },
+  { title: "contact", href: "/contact" },
 ];
 
 export const DAYS = [

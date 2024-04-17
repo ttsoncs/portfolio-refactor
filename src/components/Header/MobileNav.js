@@ -49,15 +49,17 @@ const Wrapper = styled(motion.nav)`
 
   @media ${QUERIES.phoneAndSmaller} {
     background-image: radial-gradient(
-      var(--color-dot) 1px,
+      transparent 1px,
       var(--color-background) 1px
     );
     background-size: 4px 4px;
-    background-color: var(--color-background);
+    background-color: transparent;
+    backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     inset: 0;
     justify-content: center;
+    align-items: flex-end;
     position: fixed;
   }
 `;
