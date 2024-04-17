@@ -61,7 +61,7 @@ function MobileLinks({ handelClick }) {
 const StyledLink = styled(Link)`
   align-items: center;
   color: var(--color-link);
-  font-size: ${28 / 16}rem;
+  font-size: ${24 / 16}rem;
   font-weight: var(--font-weight-medium);
   max-width: 75%;
   padding: 20px;
