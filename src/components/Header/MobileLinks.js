@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import localFont from "next/font/local";
 
 const variants = {
   open: {
@@ -15,23 +14,13 @@ const variants = {
     },
   },
   closed: {
-    x: 50,
+    x: -50,
     opacity: 0,
     transition: {
       x: { stiffness: 100 },
     },
   },
 };
-
-const roxborough = localFont({
-  src: [
-    {
-      path: "../../../public/fonts/RoxboroughCF-Regular.woff2",
-      weight: "400",
-    },
-  ],
-  display: "fallback",
-});
 
 function MobileLinks({ handelClick }) {
   const pathname = usePathname();
@@ -76,7 +65,7 @@ const StyledLink = styled(Link)`
   font-weight: var(--font-weight-medium);
   max-width: 75%;
   padding: 20px;
-  padding-right: 28px;
+  padding-left: 28px;
   text-decoration: none;
   text-transform: capitalize;
 
