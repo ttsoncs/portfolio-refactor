@@ -21,16 +21,20 @@ const Wrapper = styled.body`
 const PatternWrapper = styled.div`
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
 `;
 
 const Pattern = styled.div`
-  background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
-    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+  background-image: linear-gradient(
+      to right,
+      var(--color-grid) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
   background-size: 24px 24px;
   mask-image: radial-gradient(
     ellipse 60% 50% at 50% 0%,
-    #000 70%,
+    var(--color-background) 70%,
     transparent 100%
   );
   position: absolute;
