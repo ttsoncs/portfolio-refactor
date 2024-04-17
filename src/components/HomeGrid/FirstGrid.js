@@ -47,7 +47,7 @@ const Wrapper = styled.section`
   border-radius: 20px;
   border: 1px solid var(--color-border);
   display: grid;
-  gap: 8px;
+  gap: 12px;
   grid-column: 1/5;
   grid-row: 1/5;
   grid-template-rows: repeat(6, 1fr);
@@ -64,7 +64,7 @@ const Wrapper = styled.section`
 const FirstBox = styled.div`
   display: flex;
   grid-row: 1/3;
-  gap: 16px;
+  gap: 14px;
 `;
 
 const AvatarWrapper = styled.div`
@@ -91,7 +91,7 @@ const Information = styled.div`
 const NameWrapper = styled.div`
   align-items: center;
   display: flex;
-  gap: 6px;
+  gap: 4px;
 `;
 
 const Name = styled.p`
@@ -100,7 +100,7 @@ const Name = styled.p`
   font-weight: var(--font-weight-medium);
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${16 / 16}rem;
+    font-size: ${18 / 16}rem;
   }
 `;
 
