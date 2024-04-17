@@ -89,7 +89,7 @@ const StyledLink = styled(Link)`
 const MotionLinkWrapper = motion(StyledLink);
 
 const Index = styled.p`
-  font-size: ${16 / 16}rem;
+  font-size: ${14 / 16}rem;
 `;
 
 const Text = styled.p`
