@@ -52,7 +52,7 @@ function MobileLinks({ handelClick }) {
           variants={variants}
         >
           <Index>0{index + 1}</Index>
-          <Text className={roxborough.className}>{title}</Text>
+          <Text>{title}</Text>
         </MotionLinkWrapper>
       ))}
       {/* <Footer variants={variants}>
