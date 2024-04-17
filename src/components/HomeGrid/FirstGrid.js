@@ -51,12 +51,13 @@ const Wrapper = styled.section`
   grid-column: 1/5;
   grid-row: 1/5;
   grid-template-rows: repeat(6, 1fr);
-  padding: 24px;
+  padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 4 / 3;
     grid-column: 1/-1;
     grid-row: initial;
+    padding: 24px;
   }
 `;
 
