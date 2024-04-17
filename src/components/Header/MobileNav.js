@@ -52,14 +52,14 @@ const Wrapper = styled(motion.nav)`
       transparent 1px,
       var(--color-background) 1px
     );
-    background-size: 4px 4px;
-    background-color: transparent;
+    align-items: flex-end;
     backdrop-filter: blur(8px);
+    background-color: transparent;
+    background-size: 4px 4px;
     display: flex;
     flex-direction: column;
     inset: 0;
     justify-content: center;
-    align-items: flex-end;
     position: fixed;
   }
 `;

@@ -73,6 +73,10 @@ const StyledLink = styled(Link)`
   display: flex;
   gap: 8px;
   align-items: center;
+  
+  &:last-of-type {
+    margin-bottom: 50%;
+  }
 `;
 
 const MotionLinkWrapper = motion(StyledLink);
