@@ -23,16 +23,6 @@ const variants = {
   },
 };
 
-const mielle = localFont({
-  src: [
-    {
-      path: "../../../public/fonts/MielleCFBold.woff2",
-      weight: "700",
-    },
-  ],
-  display: "fallback",
-});
-
 function TextLoop() {
   const [index, setIndex] = React.useState(0);
 
