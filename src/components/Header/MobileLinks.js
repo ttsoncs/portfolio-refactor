@@ -51,8 +51,7 @@ function MobileLinks({ handelClick }) {
           }}
           variants={variants}
         >
-          <Index>0{index + 1}</Index>
-          <Text>{title}</Text>
+          {title}
         </MotionLinkWrapper>
       ))}
       {/* <Footer variants={variants}>
@@ -71,15 +70,15 @@ function MobileLinks({ handelClick }) {
 }
 
 const StyledLink = styled(Link)`
+  align-items: center;
   color: var(--color-link);
+  font-size: ${28 / 16}rem;
   font-weight: var(--font-weight-medium);
   max-width: 75%;
-  padding: 20px;
   padding-right: 28px;
+  padding: 20px;
   text-decoration: none;
-  display: flex;
-  gap: 8px;
-  align-items: center;
+  text-transform: capitalize;
 
   /* &:last-of-type {
     margin-bottom: 50%;
@@ -87,16 +86,6 @@ const StyledLink = styled(Link)`
 `;
 
 const MotionLinkWrapper = motion(StyledLink);
-
-const Index = styled.p`
-  font-size: ${14 / 16}rem;
-`;
-
-const Text = styled.p`
-  font-size: ${28 / 16}rem;
-  display: inline-block;
-  text-transform: capitalize;
-`;
 
 const Footer = styled(motion.div)`
   bottom: 0px;
