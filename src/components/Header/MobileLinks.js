@@ -90,7 +90,6 @@ const MotionLinkWrapper = motion(StyledLink);
 
 const Index = styled.p`
   font-size: ${16 / 16}rem;
-  font-weight: var(--font-weight-normal);
 `;
 
 const Text = styled.p`
