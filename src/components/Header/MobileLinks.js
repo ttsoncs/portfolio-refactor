@@ -55,7 +55,7 @@ function MobileLinks({ handelClick }) {
           <Text>{title}</Text>
         </MotionLinkWrapper>
       ))}
-      <Footer variants={variants}>
+      {/* <Footer variants={variants}>
         <Heading>Credit</Heading>
         <DevelopmentCredit>
           <Title>Development</Title>
@@ -65,7 +65,7 @@ function MobileLinks({ handelClick }) {
           <Title>Font</Title>
           <Credit>Wotfard</Credit>
         </FontCredit>
-      </Footer>
+      </Footer> */}
     </>
   );
 }
@@ -81,19 +81,20 @@ const StyledLink = styled(Link)`
   gap: 8px;
   align-items: center;
 
-  &:last-of-type {
+  /* &:last-of-type {
     margin-bottom: 50%;
-  }
+  } */
 `;
 
 const MotionLinkWrapper = motion(StyledLink);
 
 const Index = styled.p`
   font-size: ${16 / 16}rem;
+  font-weight: var(--font-weight-normal);
 `;
 
 const Text = styled.p`
-  font-size: ${32 / 16}rem;
+  font-size: ${28 / 16}rem;
   display: inline-block;
   text-transform: capitalize;
 `;
