@@ -47,15 +47,14 @@ const Wrapper = styled.section`
   border-radius: 20px;
   border: 1px solid var(--color-border);
   display: grid;
-  gap: 12px;
+  gap: 8px;
   grid-column: 1/5;
   grid-row: 1/5;
   grid-template-rows: repeat(6, 1fr);
-  padding: 28px;
+  padding: 24px;
 
   @media ${QUERIES.phoneAndSmaller} {
-    aspect-ratio: 4 / 3;
-    padding: 24px;
+    aspect-ratio: 3 / 2;
     grid-column: 1/-1;
     grid-row: initial;
   }
@@ -96,7 +95,7 @@ const NameWrapper = styled.div`
 
 const Name = styled.p`
   color: var(--color-primary-text);
-  font-size: ${18 / 16}rem;
+  font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
 
   @media ${QUERIES.phoneAndSmaller} {
@@ -105,8 +104,8 @@ const Name = styled.p`
 `;
 
 const Badge = styled(Image)`
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
 
   @media ${QUERIES.phoneAndSmaller} {
     width: 14px;
@@ -132,14 +131,13 @@ const SecondBox = styled.div`
 
 const Tweet = styled.p`
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   color: var(--color-primary-text);
   display: -webkit-box;
   font-size: ${18 / 16}rem;
   overflow: hidden;
 
   @media ${QUERIES.phoneAndSmaller} {
-    -webkit-line-clamp: 4;
     font-size: ${16 / 16}rem;
   }
 `;

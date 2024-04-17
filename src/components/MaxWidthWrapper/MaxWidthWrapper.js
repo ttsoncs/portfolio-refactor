@@ -10,10 +10,14 @@ function MaxWidthWrapper({ children }) {
 
 const Wrapper = styled.div`
   margin-inline: auto;
-  max-width: ${BREAKPOINTS.laptopMax * 0.85}px;
+  max-width: ${BREAKPOINTS.laptopMax * 0.9}px;
   min-height: 100%;
   padding-inline: 28px;
   position: relative;
+
+  @media ${QUERIES.laptopAndSmaller} {
+    max-width: ${BREAKPOINTS.tabletMax * 0.85}px;
+  }
 
   @media ${QUERIES.tabletAndSmaller} {
     max-width: ${BREAKPOINTS.tabletMax * 0.8}px;
