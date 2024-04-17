@@ -72,7 +72,7 @@ const AvatarWrapper = styled.div`
   border-radius: 50%;
   flex-shrink: 0;
   outline-offset: 4px;
-  outline: 3px solid var(--color-primary);
+  outline: 2px solid var(--color-primary);
   overflow: hidden;
   position: relative;
   transform: scale(0.85);
@@ -96,21 +96,21 @@ const NameWrapper = styled.div`
 
 const Name = styled.p`
   color: var(--color-primary-text);
-  font-size: ${20 / 16}rem;
+  font-size: ${18 / 16}rem;
   font-weight: var(--font-weight-medium);
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${18 / 16}rem;
+    font-size: ${16 / 16}rem;
   }
 `;
 
 const Badge = styled(Image)`
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
 
   @media ${QUERIES.phoneAndSmaller} {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
   }
 `;
 
@@ -125,20 +125,21 @@ const WorkStatus = styled.p`
 `;
 
 const SecondBox = styled.div`
-  align-items: center;
+  align-items: start;
   display: grid;
   grid-row: 3/6;
 `;
 
 const Tweet = styled.p`
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   color: var(--color-primary-text);
   display: -webkit-box;
   font-size: ${18 / 16}rem;
   overflow: hidden;
 
   @media ${QUERIES.phoneAndSmaller} {
+    -webkit-line-clamp: 4;
     font-size: ${16 / 16}rem;
   }
 `;

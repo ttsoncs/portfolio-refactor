@@ -15,13 +15,13 @@ function HomeGrid() {
       <SecondGrid />
       <ThirdGrid />
       <Box4>4</Box4>
-      <EighthGrid>8</EighthGrid>
-      {/* <Box5>5</Box5>
+      <Box5>5</Box5>
       <Box6>6</Box6>
+      <EighthGrid>8</EighthGrid>
       <Box7>7</Box7>
       <Box9>9</Box9>
       <Box10>10</Box10>
-      <Box11>11</Box11>  */}
+      <Box11>11</Box11>
     </Wrapper>
   );
 }
@@ -53,6 +53,8 @@ const Box4 = styled.div`
 `;
 
 const Box5 = styled.div`
+  background-color: var(--color-box-background);
+  border-radius: 20px;
   border: 1px solid var(--color-border);
   grid-column: 1/3;
   grid-row: 5/8;
@@ -64,6 +66,8 @@ const Box5 = styled.div`
 `;
 
 const Box6 = styled.div`
+  background-color: var(--color-box-background);
+  border-radius: 20px;
   border: 1px solid var(--color-border);
   grid-column: 3/5;
   grid-row: 5/9;
@@ -75,6 +79,8 @@ const Box6 = styled.div`
 `;
 
 const Box7 = styled.div`
+  background-color: var(--color-box-background);
+  border-radius: 20px;
   border: 1px solid var(--color-border);
   grid-column: 5/9;
   grid-row: 3/9;
@@ -86,6 +92,8 @@ const Box7 = styled.div`
 `;
 
 const Box9 = styled.div`
+  background-color: var(--color-box-background);
+  border-radius: 20px;
   border: 1px solid var(--color-border);
   grid-column: 1/3;
   grid-row: 8/11;
@@ -97,6 +105,8 @@ const Box9 = styled.div`
 `;
 
 const Box10 = styled.div`
+  background-color: var(--color-box-background);
+  border-radius: 20px;
   border: 1px solid var(--color-border);
   grid-column: 3/9;
   grid-row: 9/11;
@@ -108,6 +118,8 @@ const Box10 = styled.div`
 `;
 
 const Box11 = styled.div`
+  background-color: var(--color-box-background);
+  border-radius: 20px;
   border: 1px solid var(--color-border);
   grid-column: 9/13;
   grid-row: 6/11;
