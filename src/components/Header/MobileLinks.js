@@ -55,10 +55,17 @@ function MobileLinks({ handelClick }) {
           <Text>{title}</Text>
         </MotionLinkWrapper>
       ))}
-      {/* <Footer variants={variants}>
-        <EmailHeading>Get in touch</EmailHeading>
-        <Email href="mailto:ttson.cs@gmail.com">ttson.cs@gmail.com</Email>
-      </Footer> */}
+      <Footer variants={variants}>
+        <Heading>Credit</Heading>
+        <DevelopmentCredit>
+          <Title>Development</Title>
+          <Credit>T.T.Son</Credit>
+        </DevelopmentCredit>
+        <FontCredit>
+          <Title>Font</Title>
+          <Credit>Wotfard</Credit>
+        </FontCredit>
+      </Footer>
     </>
   );
 }
@@ -73,7 +80,7 @@ const StyledLink = styled(Link)`
   display: flex;
   gap: 8px;
   align-items: center;
-  
+
   &:last-of-type {
     margin-bottom: 50%;
   }
@@ -86,28 +93,43 @@ const Index = styled.p`
 `;
 
 const Text = styled.p`
-  font-size: ${28 / 16}rem;
+  font-size: ${32 / 16}rem;
   display: inline-block;
   text-transform: capitalize;
 `;
 
 const Footer = styled(motion.div)`
   bottom: 0px;
-  padding-left: 32px;
+  padding-left: 28px;
   padding-bottom: 28px;
   position: fixed;
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
 `;
 
-const EmailHeading = styled.div`
-  color: var(--color-secondary-text);
-  font-size: ${16 / 16}rem;
+const Heading = styled.p`
+  color: var(--color-primary-text);
+  grid-column: 1/2;
+  grid-row: 1/-1;
 `;
 
-const Email = styled(Link)`
+const DevelopmentCredit = styled.div`
+  grid-column: 2/3;
+  grid-row: 1/2;
+`;
+
+const FontCredit = styled.div`
+  grid-column: 3/-1;
+  grid-row: 1/2;
+`;
+
+const Title = styled.p`
   color: var(--color-secondary-text);
-  font-size: ${24 / 16}rem;
-  font-weight: 500;
-  text-decoration: none;
+`;
+const Credit = styled.p`
+  color: var(--color-primary-text);
 `;
 
 export default MobileLinks;
