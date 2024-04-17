@@ -10,7 +10,7 @@ function FirstGrid() {
       <FirstBox>
         <AvatarWrapper>
           <StyledImage
-            src="/images/monkey.webp"
+            src="/images/avatar.webp"
             fill={true}
             alt="Picture of Trinh The Son"
           />
