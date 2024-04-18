@@ -11,7 +11,6 @@ function NinthGrid() {
 }
 
 const Wrapper = styled.section`
-  aspect-ratio: 1 / 1;
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px solid var(--color-border);
@@ -27,7 +26,7 @@ const Wrapper = styled.section`
 `;
 
 const Text = styled.p`
-  color: var(--color-primary-text);
+  color: var(--color-secondary);
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-semibold);
 

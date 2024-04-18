@@ -15,7 +15,6 @@ function FifthGrid() {
 }
 
 const Wrapper = styled.section`
-  aspect-ratio: 1 / 1;
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px solid var(--color-border);

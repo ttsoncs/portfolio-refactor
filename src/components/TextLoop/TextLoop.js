@@ -55,7 +55,7 @@ function TextLoop() {
 }
 
 const Wrapper = styled(motion.p)`
-  color: var(--color-primary-text);
+  color: var(--color-secondary);
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-semibold);
   height: fit-content;
