@@ -21,7 +21,7 @@ function FirstGrid() {
             <Badge
               src={verified}
               alt="Verified badge"
-            ></Badge>
+            />
           </NameWrapper>
           <WorkStatus>Available for work</WorkStatus>
         </Information>

@@ -4,6 +4,7 @@ import { QUERIES } from "@/constants";
 import EighthGrid from "./EighthGrid";
 import FirstGrid from "./FirstGrid";
 import ThirdGrid from "./ThirdGrid";
+import FourthGrid from "./FourthGrid";
 import React from "react";
 import SecondGrid from "./SecondGrid";
 import styled from "styled-components";
@@ -14,7 +15,7 @@ function HomeGrid() {
       <FirstGrid />
       <SecondGrid />
       <ThirdGrid />
-      <Box4>4</Box4>
+      <FourthGrid />
       <Box5>5</Box5>
       <Box6>6</Box6>
       <EighthGrid>8</EighthGrid>
@@ -28,27 +29,13 @@ function HomeGrid() {
 
 const Wrapper = styled.main`
   display: grid;
-  gap: 12px;
+  gap: 16px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(10, 1fr);
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: none;
-  }
-`;
-
-const Box4 = styled.div`
-  aspect-ratio: 1 / 1;
-  background-color: var(--color-box-background);
-  border-radius: 20px;
-  border: 1px solid var(--color-border);
-  grid-column: 11/13;
-  grid-row: 1/4;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 2/-1;
-    grid-row: initial;
   }
 `;
 
@@ -122,7 +109,7 @@ const Box11 = styled.div`
   border-radius: 20px;
   border: 1px solid var(--color-border);
   grid-column: 9/13;
-  grid-row: 6/11;
+  grid-row: 7/11;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: initial;

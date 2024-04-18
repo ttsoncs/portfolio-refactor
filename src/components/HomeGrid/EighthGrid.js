@@ -22,7 +22,7 @@ const Wrapper = styled.section`
   border-radius: 20px;
   border: 1px solid var(--color-border);
   grid-column: 9/13;
-  grid-row: 4/6;
+  grid-row: 4/7;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 1/-1;

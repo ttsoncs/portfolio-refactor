@@ -3,7 +3,6 @@ import { QUERIES } from "@/constants";
 import { TEXTS } from "@/constants";
 import React from "react";
 import styled from "styled-components";
-import localFont from "next/font/local";
 
 const variants = {
   enter: {
@@ -49,7 +48,7 @@ function TextLoop() {
         key={index}
         variants={variants}
       >
-        {TEXTS[index]}
+        {TEXTS[index].toUpperCase()}
       </Wrapper>
     </AnimatePresence>
   );
@@ -58,13 +57,12 @@ function TextLoop() {
 const Wrapper = styled(motion.p)`
   color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   height: fit-content;
   inset: 0;
   margin: auto;
   position: absolute;
   width: fit-content;
-  white-space: nowrap;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${32 / 16}rem;
