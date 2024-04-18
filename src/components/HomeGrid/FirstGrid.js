@@ -54,7 +54,6 @@ const Wrapper = styled.section`
   padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
-    aspect-ratio: 4 / 3;
     grid-column: 1/-1;
     grid-row: initial;
     padding: 24px;
