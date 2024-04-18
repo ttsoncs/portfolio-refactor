@@ -2,10 +2,14 @@ import { QUERIES } from "@/constants";
 import React from "react";
 import styled from "styled-components";
 
-function FourthGrid() {
+function FifthGrid() {
   return (
     <Wrapper>
-      <Text>CV</Text>
+      <Text>
+        DARK
+        <br />
+        MODE
+      </Text>
     </Wrapper>
   );
 }
@@ -16,12 +20,13 @@ const Wrapper = styled.section`
   border-radius: 20px;
   border: 1px solid var(--color-border);
   display: grid;
-  grid-column: 11/13;
-  grid-row: 1/4;
+  grid-column: 1/3;
+  grid-row: 5/8;
   place-content: center;
+  text-align: center;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 2/-1;
+    grid-column: 1/2;
     grid-row: initial;
   }
 `;
@@ -36,4 +41,4 @@ const Text = styled.p`
   }
 `;
 
-export default FourthGrid;
+export default FifthGrid;

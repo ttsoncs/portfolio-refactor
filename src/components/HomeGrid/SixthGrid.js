@@ -2,26 +2,30 @@ import { QUERIES } from "@/constants";
 import React from "react";
 import styled from "styled-components";
 
-function FourthGrid() {
+function SixthGrid() {
   return (
     <Wrapper>
-      <Text>CV</Text>
+      <Text>
+        HCMC
+        <br />
+        VN
+      </Text>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
-  aspect-ratio: 1 / 1;
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px solid var(--color-border);
   display: grid;
-  grid-column: 11/13;
-  grid-row: 1/4;
+  grid-column: 3/5;
+  grid-row: 5/9;
   place-content: center;
+  text-align: center;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 2/-1;
+    grid-column: 1/-1;
     grid-row: initial;
   }
 `;
@@ -36,4 +40,4 @@ const Text = styled.p`
   }
 `;
 
-export default FourthGrid;
+export default SixthGrid;

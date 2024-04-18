@@ -20,7 +20,7 @@ const Wrapper = styled.section`
   position: relative;
 
   @media ${QUERIES.phoneAndSmaller} {
-    aspect-ratio: 16 / 5;
+    aspect-ratio: 8 / 3;
     grid-column: 1 / -1;
     grid-row: initial;
   }

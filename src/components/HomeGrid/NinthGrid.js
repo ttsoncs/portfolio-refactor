@@ -2,10 +2,10 @@ import { QUERIES } from "@/constants";
 import React from "react";
 import styled from "styled-components";
 
-function FourthGrid() {
+function NinthGrid() {
   return (
     <Wrapper>
-      <Text>CV</Text>
+      <Text>VIEWS</Text>
     </Wrapper>
   );
 }
@@ -16,8 +16,8 @@ const Wrapper = styled.section`
   border-radius: 20px;
   border: 1px solid var(--color-border);
   display: grid;
-  grid-column: 11/13;
-  grid-row: 1/4;
+  grid-column: 1/3;
+  grid-row: 8/11;
   place-content: center;
 
   @media ${QUERIES.phoneAndSmaller} {
@@ -36,4 +36,4 @@ const Text = styled.p`
   }
 `;
 
-export default FourthGrid;
+export default NinthGrid;
