@@ -21,19 +21,22 @@ const Wrapper = styled.section`
   display: grid;
   grid-column: 3/5;
   grid-row: 5/9;
-  place-content: center;
+  justify-content: center;
   text-align: center;
+  padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 1/-1;
     grid-row: initial;
+    padding: 24px;
   }
 `;
 
 const Text = styled.p`
-  color: var(--color-primary-text);
+  color: var(--color-secondary);
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-semibold);
+  line-height: 1;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${32 / 16}rem;

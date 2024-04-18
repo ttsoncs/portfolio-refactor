@@ -6,7 +6,7 @@ import TextLoop from "@/components/TextLoop";
 function SecondGrid() {
   return (
     <Wrapper>
-      <TextLoop />
+      {/* <TextLoop /> */}
     </Wrapper>
   );
 }
