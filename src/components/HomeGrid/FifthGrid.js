@@ -6,9 +6,9 @@ function FifthGrid() {
   return (
     <Wrapper>
       <Text>
-        DARK
+        Dark
         <br />
-        MODE
+        Mode
       </Text>
     </Wrapper>
   );
@@ -31,13 +31,22 @@ const Wrapper = styled.section`
 `;
 
 const Text = styled.p`
-  color: var(--color-secondary);
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--color-primary-text),
+    var(--color-tertiary)
+  );
+  background-clip: text;
+  color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   line-height: 1;
+  padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${32 / 16}rem;
+    padding: 24px;
   }
 `;
 

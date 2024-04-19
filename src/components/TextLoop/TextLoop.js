@@ -48,21 +48,32 @@ function TextLoop() {
         key={index}
         variants={variants}
       >
-        {TEXTS[index].toUpperCase()}
+        {TEXTS[index]}
       </Wrapper>
     </AnimatePresence>
   );
 }
 
 const Wrapper = styled(motion.p)`
-  color: var(--color-secondary);
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    to top,
+    var(--color-primary-text) 0%,
+    var(--color-quaternary) 75%
+  );
+  background-clip: text;
+  color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   height: fit-content;
   inset: 0;
   margin: auto;
   position: absolute;
   width: fit-content;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${32 / 16}rem;

@@ -10,10 +10,8 @@ export const COLORS = {
   },
   primary: "hsl(197deg 100% 43%)",
   secondary: "hsl(43deg 100% 90%)",
-  tertiary: "hsl(53deg 100% 50%)",
-  quaternary: "hsl(160deg 95% 36%)",
-  quinary: "hsl(0deg 94% 53%)",
-  senary: "hsl(13deg 94% 53%)",
+  tertiary: "hsl(50deg 100% 52%)",
+  quaternary: "hsl(135deg 63% 50%)",
 };
 
 export const WEIGHTS = {

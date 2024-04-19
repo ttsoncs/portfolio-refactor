@@ -48,8 +48,6 @@ const GlobalStyles = createGlobalStyle`
     --color-secondary: ${COLORS.secondary};
     --color-tertiary: ${COLORS.tertiary};
     --color-quaternary: ${COLORS.quaternary};
-    --color-quinary: ${COLORS.quinary};
-    --color-senary: ${COLORS.senary};
 
     --font-weight-normal: ${WEIGHTS.normal};
     --font-weight-medium: ${WEIGHTS.medium};
