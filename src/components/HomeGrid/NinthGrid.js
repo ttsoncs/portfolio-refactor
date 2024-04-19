@@ -5,6 +5,7 @@ import styled from "styled-components";
 function NinthGrid() {
   return (
     <Wrapper>
+      <Text></Text>
       <Number>69</Number>
       <Text>Views</Text>
     </Wrapper>
@@ -18,10 +19,11 @@ const Wrapper = styled.section`
   display: grid;
   grid-column: 1/3;
   grid-row: 8/11;
-  place-content: center;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   padding: 28px;
+  justify-content: space-between;
+  align-items: center;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 2/-1;
@@ -34,10 +36,9 @@ const Text = styled.p`
   color: var(--color-primary-text);
   font-size: ${18 / 16}rem;
   font-weight: var(--font-weight-normal);
-  grid-row: 3/-1;
-  place-self: center;
+  /* Chrome bug, when it fix, delete white-space: nowrap */
   white-space: nowrap;
-  
+
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${16 / 16}rem;
   }
@@ -50,8 +51,6 @@ const Number = styled.p`
   color: var(--color-primary-text);
   font-size: ${64 / 16}rem;
   font-weight: var(--font-weight-medium);
-  grid-row: 1/3;
-  place-self: center;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${48 / 16}rem;

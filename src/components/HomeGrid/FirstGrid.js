@@ -63,7 +63,7 @@ const Wrapper = styled.section`
 const FirstBox = styled.div`
   display: flex;
   grid-row: 1/3;
-  gap: 14px;
+  gap: 16px;
 `;
 
 const AvatarWrapper = styled.div`
