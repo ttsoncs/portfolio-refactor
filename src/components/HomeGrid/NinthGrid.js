@@ -16,7 +16,6 @@ const Wrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px solid var(--color-border);
-  display: grid;
   grid-column: 1/3;
   grid-row: 8/11;
   display: flex;
