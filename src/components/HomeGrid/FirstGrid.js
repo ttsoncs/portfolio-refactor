@@ -132,13 +132,13 @@ const SecondBox = styled.div`
 const Tweet = styled.p`
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-  color: red;
+  color: var(--color-primary-text);
   display: -webkit-box;
   font-size: ${18 / 16}rem;
   overflow: hidden;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${16 / 16}rem;
+    font-size: ${14 / 16}rem;
   }
 `;
 
