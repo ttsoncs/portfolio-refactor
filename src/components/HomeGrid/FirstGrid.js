@@ -135,7 +135,6 @@ const Tweet = styled.p`
   color: var(--color-primary-text);
   display: -webkit-box;
   font-size: ${18 / 16}rem;
-  font-weight: var(--font-weight-regular);
   overflow: hidden;
 
   @media ${QUERIES.phoneAndSmaller} {
