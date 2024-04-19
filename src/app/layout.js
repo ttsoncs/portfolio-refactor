@@ -29,7 +29,43 @@ const wotfard = localFont({
       style: "normal",
     },
     {
+      path: "../../public/fonts/wotfard-bold-webfont.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
       path: "../../public/fonts/wotfard-regularitalic-webfont.woff2",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+  display: "fallback",
+});
+
+const sf = localFont({
+  src: [
+    {
+      path: "../../public/fonts/SFProDisplay-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/SFProDisplay-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/SFProDisplay-Semibold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/SFProDisplay-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/SFProDisplay-RegularItalic.woff2",
       weight: "400",
       style: "italic",
     },
