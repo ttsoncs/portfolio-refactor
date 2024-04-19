@@ -36,7 +36,8 @@ const Text = styled.p`
   font-weight: var(--font-weight-normal);
   grid-row: 3/-1;
   place-self: center;
-
+  white-space: nowrap;
+  
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${16 / 16}rem;
   }
