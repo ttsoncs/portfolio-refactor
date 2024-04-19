@@ -26,6 +26,7 @@ const Wrapper = styled.section`
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 2/-1;
     grid-row: initial;
+    padding: 24px;
   }
 `;
 
