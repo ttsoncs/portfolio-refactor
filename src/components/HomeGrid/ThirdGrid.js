@@ -37,7 +37,7 @@ const Text = styled.p`
   background-clip: text;
   color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${32 / 16}rem;

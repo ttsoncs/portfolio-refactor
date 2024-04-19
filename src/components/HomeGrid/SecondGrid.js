@@ -19,6 +19,10 @@ const Wrapper = styled.section`
   grid-row: 1/3;
   position: relative;
   padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   @media ${QUERIES.phoneAndSmaller} {
     aspect-ratio: 8 / 3;

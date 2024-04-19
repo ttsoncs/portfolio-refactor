@@ -34,11 +34,7 @@ const Wrapper = styled.section`
 
 const Text = styled.p`
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(
-    to right,
-    var(--color-primary-text),
-    var(--color-tertiary)
-  );
+  background: linear-gradient(to right bottom, #1d2b64, #f8cdda);
   background-clip: text;
   color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
