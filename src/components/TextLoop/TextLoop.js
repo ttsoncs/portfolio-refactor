@@ -76,7 +76,7 @@ const Wrapper = styled(motion.p)`
   }
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${32 / 16}rem;
+    font-size: ${40 / 16}rem;
   }
 `;
 

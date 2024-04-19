@@ -23,10 +23,12 @@ const Wrapper = styled.section`
   grid-row: 5/8;
   place-content: center;
   text-align: center;
+  padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 1/2;
     grid-row: initial;
+    padding: 24px;
   }
 `;
 
@@ -42,11 +44,9 @@ const Text = styled.p`
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-medium);
   line-height: 1;
-  padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${32 / 16}rem;
-    padding: 24px;
   }
 `;
 
