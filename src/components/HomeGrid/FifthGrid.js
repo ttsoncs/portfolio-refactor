@@ -5,8 +5,7 @@ import styled from "styled-components";
 function FifthGrid() {
   return (
     <Wrapper>
-      <Text>
-      </Text>
+      <Text></Text>
     </Wrapper>
   );
 }

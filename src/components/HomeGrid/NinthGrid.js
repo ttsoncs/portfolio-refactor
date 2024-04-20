@@ -3,10 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 function NinthGrid() {
-  return (
-    <Wrapper>
-    </Wrapper>
-  );
+  return <Wrapper></Wrapper>;
 }
 
 const Wrapper = styled.section`
