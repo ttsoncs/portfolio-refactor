@@ -45,7 +45,7 @@ const Wrapper = styled.main`
 const Box7 = styled.div`
   background-color: var(--color-box-background);
   border-radius: 20px;
-  border: 1px solid var(--color-border);
+  border: 1px dashed var(--color-border);
   grid-column: 5/9;
   grid-row: 3/9;
 
@@ -58,7 +58,7 @@ const Box7 = styled.div`
 const Box9 = styled.div`
   background-color: var(--color-box-background);
   border-radius: 20px;
-  border: 1px solid var(--color-border);
+  border: 1px dashed var(--color-border);
   grid-column: 1/3;
   grid-row: 8/11;
 
@@ -71,7 +71,7 @@ const Box9 = styled.div`
 const Box10 = styled.div`
   background-color: var(--color-box-background);
   border-radius: 20px;
-  border: 1px solid var(--color-border);
+  border: 1px dashed var(--color-border);
   grid-column: 5/9;
   grid-row: 9/11;
 
@@ -84,7 +84,7 @@ const Box10 = styled.div`
 const Box11 = styled.div`
   background-color: var(--color-box-background);
   border-radius: 20px;
-  border: 1px solid var(--color-border);
+  border: 1px dashed var(--color-border);
   grid-column: 9/13;
   grid-row: 7/11;
 

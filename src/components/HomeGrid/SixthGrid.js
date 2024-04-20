@@ -17,7 +17,7 @@ function SixthGrid() {
 const Wrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
-  border: 1px solid var(--color-border);
+  border: 1px dashed var(--color-border);
   display: grid;
   grid-column: 3/5;
   grid-row: 5/-1;

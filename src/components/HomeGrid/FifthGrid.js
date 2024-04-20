@@ -17,7 +17,7 @@ function FifthGrid() {
 const Wrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
-  border: 1px solid var(--color-border);
+  border: 1px dashed var(--color-border);
   display: grid;
   grid-column: 1/3;
   grid-row: 5/8;
@@ -34,9 +34,9 @@ const Wrapper = styled.section`
 
 const Text = styled.p`
   color: var(--color-primary-text);
-  font-size: ${48 / 16}rem;
+  font-size: ${32 / 16}rem;
   font-weight: var(--font-weight-medium);
-  line-height: 1;
+  line-height: 1.2;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${32 / 16}rem;
