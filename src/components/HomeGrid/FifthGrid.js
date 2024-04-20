@@ -33,7 +33,7 @@ const Wrapper = styled.section`
 `;
 
 const Text = styled.p`
-  color: var(--color-secondary);
+  color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-medium);
   line-height: 1;

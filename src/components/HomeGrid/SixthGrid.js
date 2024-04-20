@@ -20,7 +20,7 @@ const Wrapper = styled.section`
   border: 1px solid var(--color-border);
   display: grid;
   grid-column: 3/5;
-  grid-row: 5/9;
+  grid-row: 5/-1;
   justify-content: center;
   text-align: center;
   padding: 28px;
@@ -35,7 +35,7 @@ const Wrapper = styled.section`
 const Text = styled.p`
   color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   line-height: 1;
 
   @media ${QUERIES.phoneAndSmaller} {

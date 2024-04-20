@@ -72,7 +72,7 @@ const Box10 = styled.div`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px solid var(--color-border);
-  grid-column: 3/9;
+  grid-column: 5/9;
   grid-row: 9/11;
 
   @media ${QUERIES.phoneAndSmaller} {
