@@ -8,8 +8,8 @@ export const COLORS = {
     primary: "hsl(0deg 0% 0%)",
     secondary: "hsl(0deg 0% 1%)",
   },
-  primary: "hsl(197deg 100% 43%)",
-  secondary: "hsl(43deg 100% 90%)",
+  primary: "hsl(220deg 100% 50%)",
+  secondary: "hsl(317deg 100% 84%)",
   tertiary: "hsl(50deg 100% 52%)",
   quaternary: "hsl(135deg 63% 50%)",
 };

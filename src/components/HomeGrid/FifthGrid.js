@@ -33,10 +33,7 @@ const Wrapper = styled.section`
 `;
 
 const Text = styled.p`
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(to right bottom, #1d2b64, #f8cdda);
-  background-clip: text;
-  color: var(--color-primary-text);
+  color: var(--color-secondary);
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-medium);
   line-height: 1;
