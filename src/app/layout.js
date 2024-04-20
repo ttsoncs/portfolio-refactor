@@ -48,6 +48,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={wotfard.className}
     >
+      <head>
+        <link rel="shortcut icon" href="/images/emoji.svg" type="image/x-icon" />
+      </head>
       <StyledComponentsRegistry>
         <Body>
           <MaxWidthWrapper>
