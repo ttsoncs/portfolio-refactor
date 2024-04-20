@@ -23,7 +23,7 @@ function FirstGrid() {
               alt="Verified badge"
             />
           </NameWrapper>
-          <WorkStatus>Available for work 5:06</WorkStatus>
+          <WorkStatus>Available for work</WorkStatus>
         </Information>
       </FirstBox>
       <SecondBox>

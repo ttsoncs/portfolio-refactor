@@ -2,14 +2,13 @@ import { QUERIES } from "@/constants";
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import cover from "/public/images/cover.webp";
 
 function TenthGrid() {
   return (
     <Wrapper>
       <AvatarWrapper>
         <StyledImage
-          src={cover}
+          src="/images/cover.webp"
           alt="Song cover"
         />
       </AvatarWrapper>
