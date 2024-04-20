@@ -55,13 +55,6 @@ function TextLoop() {
 }
 
 const Wrapper = styled(motion.p)`
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(
-    to top,
-    var(--color-primary-text) 0%,
-    var(--color-quaternary) 75%
-  );
-  background-clip: text;
   color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-medium);

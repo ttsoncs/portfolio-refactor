@@ -28,13 +28,6 @@ const Wrapper = styled.section`
 `;
 
 const Text = styled.p`
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(
-    to right,
-    var(--color-primary-text),
-    var(--color-tertiary)
-  );
-  background-clip: text;
   color: var(--color-primary-text);
   font-size: ${48 / 16}rem;
   font-weight: var(--font-weight-medium);

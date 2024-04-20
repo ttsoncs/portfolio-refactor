@@ -33,22 +33,19 @@ const Wrapper = styled.section`
 
 const Text = styled.p`
   color: var(--color-primary-text);
-  font-size: ${18 / 16}rem;
+  font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-normal);
   /* Chrome bug, when it fix, delete white-space: nowrap */
   white-space: nowrap;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: ${16 / 16}rem;
+    font-size: ${18 / 16}rem;
   }
 `;
 
 const Number = styled.p`
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(to right, #834d9b, #d04ed6);
-  background-clip: text;
   color: var(--color-primary-text);
-  font-size: ${64 / 16}rem;
+  font-size: ${80 / 16}rem;
   font-weight: var(--font-weight-medium);
 
   @media ${QUERIES.phoneAndSmaller} {
