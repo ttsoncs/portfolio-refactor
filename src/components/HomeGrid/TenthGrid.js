@@ -9,6 +9,7 @@ function TenthGrid() {
       <AvatarWrapper>
         <StyledImage
           src="/images/cover.webp"
+          fill={true}
           alt="Song cover"
         />
       </AvatarWrapper>
