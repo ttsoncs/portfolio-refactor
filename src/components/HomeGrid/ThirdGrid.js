@@ -48,6 +48,7 @@ const Text = styled.p`
   font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
   grid-row: 3/-1;
+  line-height: 1;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${18 / 16}rem;
