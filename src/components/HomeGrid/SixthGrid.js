@@ -6,9 +6,6 @@ function SixthGrid() {
   return (
     <Wrapper>
       <Text>
-        HCMC
-        <br />
-        VN
       </Text>
     </Wrapper>
   );

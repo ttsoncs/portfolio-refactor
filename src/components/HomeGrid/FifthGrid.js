@@ -6,9 +6,6 @@ function FifthGrid() {
   return (
     <Wrapper>
       <Text>
-        Dark
-        <br />
-        Mode
       </Text>
     </Wrapper>
   );

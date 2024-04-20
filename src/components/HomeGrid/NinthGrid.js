@@ -5,9 +5,6 @@ import styled from "styled-components";
 function NinthGrid() {
   return (
     <Wrapper>
-      <Text></Text>
-      <Number>69</Number>
-      <Text>Views</Text>
     </Wrapper>
   );
 }

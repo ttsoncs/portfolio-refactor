@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
-import flower from "/public/images/flower.svg";
 
 function Logo({ setIsOpen }) {
   return (

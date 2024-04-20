@@ -4,6 +4,7 @@ import { QUERIES } from "@/constants";
 import EighthGrid from "./EighthGrid";
 import FifthGrid from "./FifthGrid";
 import FirstGrid from "./FirstGrid";
+import TenthGrid from "./TenthGrid";
 import FourthGrid from "./FourthGrid";
 import NinthGrid from "./NinthGrid";
 import React from "react";
@@ -24,7 +25,7 @@ function HomeGrid() {
       <SixthGrid />
       <Box7>7</Box7>
       <EighthGrid />
-      <Box10>10</Box10>
+      <TenthGrid />
       <Box11>11</Box11>
     </Wrapper>
   );
@@ -61,19 +62,6 @@ const Box9 = styled.div`
   border: 1px dashed var(--color-border);
   grid-column: 1/3;
   grid-row: 8/11;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    grid-column: initial;
-    grid-row: initial;
-  }
-`;
-
-const Box10 = styled.div`
-  background-color: var(--color-box-background);
-  border-radius: 20px;
-  border: 1px dashed var(--color-border);
-  grid-column: 5/9;
-  grid-row: 9/11;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: initial;

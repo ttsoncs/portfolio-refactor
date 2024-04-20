@@ -10,7 +10,7 @@ function FirstGrid() {
       <FirstBox>
         <AvatarWrapper>
           <StyledImage
-            src="/images/avatar.webp"
+            src="/images/emoji.svg"
             fill={true}
             alt="Picture of Trinh The Son"
           />
@@ -80,7 +80,6 @@ const AvatarWrapper = styled.div`
 const StyledImage = styled(Image)`
   inset: 0;
   position: absolute;
-  transform: scale(1.5);
 `;
 
 const Information = styled.div`

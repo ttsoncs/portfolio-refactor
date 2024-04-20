@@ -5,12 +5,12 @@ import styled from "styled-components";
 function EighthGrid() {
   return (
     <Wrapper>
-      <audio controls>
+      {/* <audio controls>
         <source
           src="/sounds/music.mp3"
           type="audio/mpeg"
         />
-      </audio>
+      </audio> */}
     </Wrapper>
   );
 }
