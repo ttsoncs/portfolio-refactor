@@ -29,7 +29,7 @@ function DesktopLinks({ handelClick }) {
 }
 
 const StyledLink = styled(Link)`
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px dashed transparent;
   color: var(--color-link);
   font-size: ${16 / 16}rem;
   font-weight: var(--font-weight-medium);
