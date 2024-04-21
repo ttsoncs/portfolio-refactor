@@ -97,7 +97,7 @@ const ProfileWrapper = styled.div`
 const Profile = styled.div`
   align-items: center;
   display: flex;
-  gap: 8px;
+  gap: 6px;
 `;
 
 const Name = styled.p`
@@ -117,7 +117,6 @@ const Name = styled.p`
 const Badge = styled(Image)`
   width: 16px;
   height: 16px;
-  margin-top: 1px;
 
   @media ${QUERIES.phoneAndSmaller} {
     width: 14px;
