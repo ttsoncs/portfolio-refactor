@@ -17,16 +17,16 @@ function FirstGrid() {
               alt="Picture of Trinh The Son"
             />
           </AvatarWrapper>
-          <Information>
-            <NameWrapper>
+          <ProfileWrapper>
+            <Profile>
               <Name>Trinh The Son</Name>
               <Badge
                 src={verified}
                 alt="Verified badge"
               />
-            </NameWrapper>
-            <WorkStatus>Available for work</WorkStatus>
-          </Information>
+            </Profile>
+            <Status>Available for work</Status>
+          </ProfileWrapper>
         </FirstBox>
         <SecondBox>
           <Tweet>
@@ -90,20 +90,24 @@ const AvatarWrapper = styled.div`
   position: relative;
 `;
 
-const Information = styled.div`
+const ProfileWrapper = styled.div`
   align-self: center;
 `;
 
-const NameWrapper = styled.div`
+const Profile = styled.div`
   align-items: center;
   display: flex;
-  gap: 6px;
+  gap: 8px;
 `;
 
 const Name = styled.p`
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   color: var(--color-primary-text);
+  display: -webkit-box;
   font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
+  overflow: hidden;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${18 / 16}rem;
@@ -113,6 +117,7 @@ const Name = styled.p`
 const Badge = styled(Image)`
   width: 16px;
   height: 16px;
+  margin-top: 1px;
 
   @media ${QUERIES.phoneAndSmaller} {
     width: 14px;
@@ -120,7 +125,7 @@ const Badge = styled(Image)`
   }
 `;
 
-const WorkStatus = styled.p`
+const Status = styled.p`
   color: var(--color-secondary-text);
   font-size: ${16 / 16}rem;
   line-height: 1.25;
@@ -131,7 +136,6 @@ const WorkStatus = styled.p`
 `;
 
 const SecondBox = styled.div`
-  display: grid;
   grid-area: second;
 `;
 
@@ -154,8 +158,12 @@ const ThirdBox = styled.div`
 `;
 
 const Time = styled.p`
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   color: var(--color-secondary-text);
+  display: -webkit-box;
   font-size: ${16 / 16}rem;
+  overflow: hidden;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${14 / 16}rem;
