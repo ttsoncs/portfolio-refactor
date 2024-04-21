@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import verified from "/public/images/verified.svg";
+import emoji from "/public/images/emoji.svg";
 
 function FirstGrid() {
   return (
@@ -10,8 +11,8 @@ function FirstGrid() {
       <Wrapper>
         <FirstBox>
           <AvatarWrapper>
-            <StyledImage
-              src="/images/emoji.svg"
+            <Image
+              src={emoji}
               fill={true}
               alt="Picture of Trinh The Son"
             />
@@ -69,23 +70,22 @@ const Wrapper = styled.div`
 
 const FirstBox = styled.div`
   display: flex;
+  gap: 18px;
   grid-area: first;
-  gap: 16px;
+  height: 100%;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    gap: 16px;
+  }
 `;
 
 const AvatarWrapper = styled.div`
   aspect-ratio: 1/1;
   border-radius: 50%;
   flex-shrink: 0;
-  outline-offset: 4px;
+  outline-offset: 2px;
   outline: 2px solid var(--color-primary);
-  overflow: hidden;
   position: relative;
-`;
-
-const StyledImage = styled(Image)`
-  inset: 0;
-  position: absolute;
 `;
 
 const Information = styled.div`
