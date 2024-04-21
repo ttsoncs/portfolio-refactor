@@ -62,7 +62,7 @@ const Text = styled.p`
   color: var(--color-primary-text);
   font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
-  grid-row: 3/-1;
+  grid-row: 1/2;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${18 / 16}rem;
@@ -70,7 +70,7 @@ const Text = styled.p`
 `;
 
 const TextWrapper = styled.div`
-  align-self: end;
+  align-self: start;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,7 @@ const TextWrapper = styled.div`
 const StyledLink = styled(Link)``;
 
 const StyledImage = styled(Image)`
-  grid-row: 1/3;
+  grid-row: 2/-1;
   height: 100%;
   width: 100%;
 `;

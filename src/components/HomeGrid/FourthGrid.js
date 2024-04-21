@@ -1,10 +1,12 @@
 import { QUERIES } from "@/constants";
 import page from "/public/images/page.svg";
+import right from "/public/images/right.svg";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
-function ThirdGrid() {
+function FourthGrid() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
@@ -12,7 +14,19 @@ function ThirdGrid() {
           src={page}
           alt="Page"
         />
-        <Text>Resume</Text>
+        <TextWrapper>
+          <Text>Resume</Text>
+          <StyledLink
+            href="/files/TRINHTHESON_RESUME.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <StyleArrow
+              src={right}
+              alt="Right arrow"
+            />
+          </StyledLink>
+        </TextWrapper>
       </Wrapper>
     </MaxWidthWrapper>
   );
@@ -45,7 +59,6 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-  align-self: end;
   color: var(--color-primary-text);
   font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
@@ -56,10 +69,29 @@ const Text = styled.p`
   }
 `;
 
+const TextWrapper = styled.div`
+  align-self: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const StyledLink = styled(Link)``;
+
 const StyledImage = styled(Image)`
   grid-row: 1/3;
   height: 100%;
   width: 100%;
 `;
 
-export default ThirdGrid;
+const StyleArrow = styled(Image)`
+  height: 28px;
+  width: 28px;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    height: 24px;
+    width: 24px;
+  }
+`;
+
+export default FourthGrid;
