@@ -51,13 +51,11 @@ const MaxWidthWrapper = styled.section`
   grid-column: 1/5;
   grid-row: 1/5;
   padding: 28px;
-  padding-bottom: 20px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 1/-1;
     grid-row: initial;
     padding: 24px;
-    padding-bottom: 16px;
   }
 `;
 
