@@ -42,14 +42,12 @@ const MaxWidthWrapper = styled.section`
   border: 1px dashed var(--color-border);
   grid-column: 11/13;
   grid-row: 1/4;
-  padding-block: 20px;
-  padding-inline: 28px;
+  padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 2/-1;
     grid-row: initial;
-    padding-block: 16px;
-    padding-inline: 24px;
+    padding: 24px;
   }
 `;
 
@@ -59,6 +57,7 @@ const Wrapper = styled.div`
   grid-template-rows: 1fr 1fr;
   width: 100%;
   height: 100%;
+  gap: 16px;
 
   /*  */
   aspect-ratio: 1/1;

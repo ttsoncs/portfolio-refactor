@@ -42,14 +42,12 @@ const MaxWidthWrapper = styled.section`
   border: 1px dashed var(--color-border);
   grid-column: 9/11;
   grid-row: 1/4;
-  padding-block: 20px;
-  padding-inline: 28px;
+  padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 1/2;
     grid-row: initial;
-    padding-block: 16px;
-    padding-inline: 24px;
+    padding: 24px;
   }
 `;
 
@@ -57,7 +55,9 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-areas: "first" "second";
   grid-template-rows: 1fr 1fr;
+  width: 100%;
   height: 100%;
+  gap: 16px;
 `;
 
 const Profile = styled.div`
