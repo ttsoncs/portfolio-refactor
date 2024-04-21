@@ -19,6 +19,7 @@ function ThirdGrid() {
 }
 
 const MaxWidthWrapper = styled.section`
+  aspect-ratio: 1/1;
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
@@ -37,7 +38,6 @@ const MaxWidthWrapper = styled.section`
 
 const Wrapper = styled.div`
   align-items: center;
-  aspect-ratio: 1/1;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   height: 100%;

@@ -31,7 +31,7 @@ function DesktopLinks({ handelClick }) {
 const StyledLink = styled(Link)`
   border-bottom: 2px solid transparent;
   color: var(--color-link);
-  font-size: ${16 / 16}rem;
+  font-size: ${18 / 16}rem;
   font-weight: var(--font-weight-medium);
   text-decoration: none;
   text-transform: capitalize;

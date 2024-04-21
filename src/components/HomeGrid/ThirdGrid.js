@@ -1,8 +1,10 @@
 import { QUERIES } from "@/constants";
 import box from "/public/images/package.svg";
+import right from "/public/images/right.svg";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 function ThirdGrid() {
   return (
@@ -12,13 +14,26 @@ function ThirdGrid() {
           src={box}
           alt="Box"
         />
-        <Text>GitHub</Text>
+        <TextWrapper>
+          <Text>GitHub</Text>
+          <StyledLink
+            href="https://github.com/ttsoncs/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <StyleArrow
+              src={right}
+              alt="Right arrow"
+            />
+          </StyledLink>
+        </TextWrapper>
       </Wrapper>
     </MaxWidthWrapper>
   );
 }
 
 const MaxWidthWrapper = styled.section`
+  aspect-ratio: 1/1;
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
@@ -37,7 +52,6 @@ const MaxWidthWrapper = styled.section`
 
 const Wrapper = styled.div`
   align-items: center;
-  aspect-ratio: 1/1;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   height: 100%;
@@ -45,7 +59,6 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-  align-self: end;
   color: var(--color-primary-text);
   font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
@@ -56,10 +69,29 @@ const Text = styled.p`
   }
 `;
 
+const TextWrapper = styled.div`
+  align-self: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const StyledLink = styled(Link)``;
+
 const StyledImage = styled(Image)`
   grid-row: 1/3;
   height: 100%;
   width: 100%;
+`;
+
+const StyleArrow = styled(Image)`
+  height: 28px;
+  width: 28px;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    height: 24px;
+    width: 24px;
+  }
 `;
 
 export default ThirdGrid;
