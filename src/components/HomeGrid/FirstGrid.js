@@ -52,6 +52,8 @@ const MaxWidthWrapper = styled.section`
   grid-column: 1/5;
   grid-row: 1/5;
   padding: 28px;
+  display: grid;
+  place-content: center;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 1/-1;
