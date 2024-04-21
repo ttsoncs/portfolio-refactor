@@ -6,51 +6,50 @@ import verified from "/public/images/verified.svg";
 
 function FirstGrid() {
   return (
-    <Wrapper>
-      <FirstBox>
-        <AvatarWrapper>
-          <StyledImage
-            src="/images/emoji.svg"
-            fill={true}
-            alt="Picture of Trinh The Son"
-          />
-        </AvatarWrapper>
-        <Information>
-          <NameWrapper>
-            <Name>Trinh The Son</Name>
-            <Badge
-              src={verified}
-              alt="Verified badge"
+    <MaxWidthWrapper>
+      <Wrapper>
+        <FirstBox>
+          <AvatarWrapper>
+            <StyledImage
+              src="/images/emoji.svg"
+              fill={true}
+              alt="Picture of Trinh The Son"
             />
-          </NameWrapper>
-          <WorkStatus>Available for work</WorkStatus>
-        </Information>
-      </FirstBox>
-      <SecondBox>
-        <Tweet>
-          Welcome to my portfolio! Explore my work and discover the passion and
-          creativity behind it. Feel free to reach out if you have any questions
-          or opportunities to collaborate. Enjoy your visit!
-        </Tweet>
-      </SecondBox>
-      <ThirdBox>
-        <Time>
-          5:06 PM &#183; April 12, 2024 &#183; <Highlight>69</Highlight> Views
-        </Time>
-      </ThirdBox>
-    </Wrapper>
+          </AvatarWrapper>
+          <Information>
+            <NameWrapper>
+              <Name>Trinh The Son</Name>
+              <Badge
+                src={verified}
+                alt="Verified badge"
+              />
+            </NameWrapper>
+            <WorkStatus>Available for work</WorkStatus>
+          </Information>
+        </FirstBox>
+        <SecondBox>
+          <Tweet>
+            Welcome to my portfolio! Explore my work and discover the passion
+            and creativity behind it. Feel free to reach out if you have any
+            questions or opportunities to collaborate. Enjoy your visit!
+          </Tweet>
+        </SecondBox>
+        <ThirdBox>
+          <Time>
+            5:06 PM &#183; April 12, 2024 &#183; <Highlight>69</Highlight> Views
+          </Time>
+        </ThirdBox>
+      </Wrapper>
+    </MaxWidthWrapper>
   );
 }
 
-const Wrapper = styled.section`
+const MaxWidthWrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  display: grid;
-  gap: 12px;
   grid-column: 1/5;
   grid-row: 1/5;
-  grid-template-rows: repeat(6, 1fr);
   padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
@@ -60,9 +59,17 @@ const Wrapper = styled.section`
   }
 `;
 
+const Wrapper = styled.div`
+  height: 100%;
+  display: grid;
+  gap: 16px;
+  grid-template-rows: 1fr 2fr auto;
+  grid-template-areas: "first" "second" "third";
+`;
+
 const FirstBox = styled.div`
   display: flex;
-  grid-row: 1/3;
+  grid-area: first;
   gap: 16px;
 `;
 
@@ -74,7 +81,6 @@ const AvatarWrapper = styled.div`
   outline: 2px solid var(--color-primary);
   overflow: hidden;
   position: relative;
-  transform: scale(0.85);
 `;
 
 const StyledImage = styled(Image)`
@@ -123,9 +129,8 @@ const WorkStatus = styled.p`
 `;
 
 const SecondBox = styled.div`
-  align-items: start;
   display: grid;
-  grid-row: 3/6;
+  grid-area: second;
 `;
 
 const Tweet = styled.p`
@@ -143,8 +148,7 @@ const Tweet = styled.p`
 
 const ThirdBox = styled.div`
   align-items: end;
-  display: grid;
-  grid-row: 6/-1;
+  grid-area: third;
 `;
 
 const Time = styled.p`
