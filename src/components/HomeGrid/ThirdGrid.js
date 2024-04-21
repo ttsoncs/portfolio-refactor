@@ -57,7 +57,7 @@ const Wrapper = styled.div`
   grid-template-rows: 1fr 1fr;
   width: 100%;
   height: 100%;
-  gap: 16px;
+  gap: 8px;
 `;
 
 const Profile = styled.div`
