@@ -24,12 +24,14 @@ const MaxWidthWrapper = styled.section`
   border: 1px dashed var(--color-border);
   grid-column: 9/11;
   grid-row: 1/4;
-  padding: 28px;
+  padding-inline: 28px;
+  padding-block: 20px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 1/2;
     grid-row: initial;
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 16px;
   }
 `;
 
@@ -48,7 +50,6 @@ const Text = styled.p`
   font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
   grid-row: 3/-1;
-  line-height: 1;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${18 / 16}rem;
