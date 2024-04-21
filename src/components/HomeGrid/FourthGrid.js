@@ -1,23 +1,27 @@
 import { QUERIES } from "@/constants";
 import page from "/public/images/page.svg";
-import right from "/public/images/right.svg";
 import Image from "next/image";
-import React from "react";
-import styled from "styled-components";
 import Link from "next/link";
+import React from "react";
+import right from "/public/images/right.svg";
+import styled from "styled-components";
 
 function FourthGrid() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
-        <StyledImage
-          src={page}
-          alt="Page"
-        />
+        <ImageWrapper>
+          <Image
+            src={page}
+            fill={true}
+            alt="Page"
+          />
+        </ImageWrapper>
         <TextWrapper>
           <Text>Resume</Text>
-          <StyledLink
-            href="/files/TRINHTHESON_RESUME.pdf"
+          <Path>TrinhTheSon.pdf</Path>
+          {/* <Link
+            href="https://github.com/ttsoncs/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,7 +29,7 @@ function FourthGrid() {
               src={right}
               alt="Right arrow"
             />
-          </StyledLink>
+          </Link> */}
         </TextWrapper>
       </Wrapper>
     </MaxWidthWrapper>
@@ -33,55 +37,65 @@ function FourthGrid() {
 }
 
 const MaxWidthWrapper = styled.section`
-  aspect-ratio: 1/1;
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
   grid-column: 11/13;
   grid-row: 1/4;
-  padding-inline: 28px;
   padding-block: 20px;
+  padding-inline: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 2/-1;
     grid-row: initial;
-    padding-inline: 24px;
     padding-block: 16px;
+    padding-inline: 24px;
   }
 `;
 
 const Wrapper = styled.div`
-  align-items: center;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  height: 100%;
+  grid-template-areas: "first" "second";
+  grid-template-rows: 1fr 1fr;
   width: 100%;
+  height: 100%;
+
+  /*  */
+  aspect-ratio: 1/1;
+`;
+
+const ImageWrapper = styled.div`
+  grid-area: first;
+  position: relative;
+`;
+
+const TextWrapper = styled.div`
+  align-self: end;
+  grid-area: second;
+  overflow: hidden;
 `;
 
 const Text = styled.p`
   color: var(--color-primary-text);
   font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
-  grid-row: 3/-1;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${18 / 16}rem;
   }
 `;
 
-const TextWrapper = styled.div`
-  align-self: end;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+const Path = styled.p`
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--color-secondary-text);
+  display: -webkit-box;
+  font-size: ${16 / 16}rem;
+  line-height: 1.25;
 
-const StyledLink = styled(Link)``;
-
-const StyledImage = styled(Image)`
-  grid-row: 1/3;
-  height: 100%;
-  width: 100%;
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: ${14 / 16}rem;
+  }
 `;
 
 const StyleArrow = styled(Image)`

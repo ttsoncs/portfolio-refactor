@@ -1,22 +1,19 @@
 import { QUERIES } from "@/constants";
-import box from "/public/images/package.svg";
-import right from "/public/images/right.svg";
+import box from "/public/images/box.svg";
 import Image from "next/image";
-import React from "react";
-import styled from "styled-components";
 import Link from "next/link";
+import React from "react";
+import right from "/public/images/right.svg";
+import styled from "styled-components";
 
 function ThirdGrid() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
-        <StyledImage
-          src={box}
-          alt="Box"
-        />
-        <TextWrapper>
+        <Profile>
           <Text>GitHub</Text>
-          <StyledLink
+          <At>@ttsoncs</At>
+          {/* <Link
             href="https://github.com/ttsoncs/"
             target="_blank"
             rel="noopener noreferrer"
@@ -25,63 +22,67 @@ function ThirdGrid() {
               src={right}
               alt="Right arrow"
             />
-          </StyledLink>
-        </TextWrapper>
+          </Link> */}
+        </Profile>
+        <ImageWrapper>
+          <Image
+            src={box}
+            fill={true}
+            alt="Box"
+          />
+        </ImageWrapper>
       </Wrapper>
     </MaxWidthWrapper>
   );
 }
 
 const MaxWidthWrapper = styled.section`
-  aspect-ratio: 1/1;
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
   grid-column: 9/11;
   grid-row: 1/4;
-  padding-inline: 28px;
   padding-block: 20px;
+  padding-inline: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-column: 1/2;
     grid-row: initial;
-    padding-inline: 24px;
     padding-block: 16px;
+    padding-inline: 24px;
   }
 `;
 
 const Wrapper = styled.div`
-  align-items: center;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "first" "second";
+  grid-template-rows: 1fr 1fr;
   height: 100%;
-  width: 100%;
+`;
+
+const Profile = styled.div`
+  align-self: start;
+  grid-area: first;
 `;
 
 const Text = styled.p`
   color: var(--color-primary-text);
   font-size: ${20 / 16}rem;
   font-weight: var(--font-weight-medium);
-  grid-row: 1/2;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${18 / 16}rem;
   }
 `;
 
-const TextWrapper = styled.div`
-  align-self: start;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
+const At = styled.p`
+  color: var(--color-secondary-text);
+  font-size: ${16 / 16}rem;
+  line-height: 1.25;
 
-const StyledLink = styled(Link)``;
-
-const StyledImage = styled(Image)`
-  grid-row: 2/-1;
-  height: 100%;
-  width: 100%;
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: ${14 / 16}rem;
+  }
 `;
 
 const StyleArrow = styled(Image)`
@@ -92,6 +93,11 @@ const StyleArrow = styled(Image)`
     height: 24px;
     width: 24px;
   }
+`;
+
+const ImageWrapper = styled.div`
+  grid-area: second;
+  position: relative;
 `;
 
 export default ThirdGrid;

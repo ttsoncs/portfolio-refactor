@@ -1,9 +1,9 @@
 import { QUERIES } from "@/constants";
+import emoji from "/public/images/emoji.svg";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import verified from "/public/images/verified.svg";
-import emoji from "/public/images/emoji.svg";
 
 function FirstGrid() {
   return (
