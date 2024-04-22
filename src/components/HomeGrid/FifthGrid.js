@@ -15,15 +15,15 @@ const Wrapper = styled.section`
   border-radius: 20px;
   border: 1px dashed var(--color-border);
   display: grid;
-  grid-column: 1/3;
-  grid-row: 5/8;
+  grid-column: 1 / 3;
+  grid-row: 7 / 12;
   place-content: center;
   text-align: center;
   padding: 28px;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 1/2;
-    grid-row: initial;
+    grid-column: 1 / 2;
+    grid-row: 14 / 18;
     padding: 24px;
   }
 `;

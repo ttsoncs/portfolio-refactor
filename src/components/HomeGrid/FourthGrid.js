@@ -40,14 +40,16 @@ const MaxWidthWrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 11/13;
-  grid-row: 1/4;
-  padding: 28px;
+  grid-column: 11 / -1;
+  grid-row: 1 / 6;
+  padding-inline: 28px;
+  padding-block: 20px;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 2/-1;
-    grid-row: initial;
-    padding: 24px;
+    grid-column: 2 / -1;
+    grid-row: 10 / 14;
+    padding-inline: 24px;
+    padding-block: 16px;
   }
 `;
 
@@ -60,7 +62,7 @@ const Wrapper = styled.div`
   gap: 8px;
 
   /*  */
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
 `;
 
 const ImageWrapper = styled.div`

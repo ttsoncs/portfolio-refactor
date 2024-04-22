@@ -15,19 +15,14 @@ const Wrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 5/9;
-  grid-row: 1/3;
+  grid-column: 5 / 9;
+  grid-row: 1 / 4;
   position: relative;
   padding: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 
   @media ${QUERIES.phoneAndSmaller} {
-    aspect-ratio: 8 / 3;
     grid-column: 1 / -1;
-    grid-row: initial;
+    grid-row: 7 / 10;
     padding: 24px;
   }
 `;

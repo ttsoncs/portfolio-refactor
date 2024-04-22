@@ -40,14 +40,16 @@ const MaxWidthWrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 9/11;
-  grid-row: 1/4;
-  padding: 28px;
+  grid-column: 9 / 11;
+  grid-row: 1 / 6;
+  padding-inline: 28px;
+  padding-block: 20px;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 1/2;
-    grid-row: initial;
-    padding: 24px;
+    grid-column: 1 / 2;
+    grid-row: 10 / 14;
+    padding-inline: 24px;
+    padding-block: 16px;
   }
 `;
 

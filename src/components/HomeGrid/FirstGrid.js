@@ -49,15 +49,15 @@ const MaxWidthWrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 1/5;
-  grid-row: 1/5;
+  grid-column: 1 / 5;
+  grid-row: 1 / 7;
   padding: 28px;
   display: grid;
   place-content: center;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 1/-1;
-    grid-row: initial;
+    grid-column: 1 / -1;
+    grid-row: 1 / 7;
     padding: 24px;
   }
 `;
@@ -82,7 +82,7 @@ const FirstBox = styled.div`
 `;
 
 const AvatarWrapper = styled.div`
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   flex-shrink: 0;
   outline-offset: 2px;
@@ -125,9 +125,13 @@ const Badge = styled(Image)`
 `;
 
 const Status = styled.p`
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   color: var(--color-secondary-text);
+  display: -webkit-box;
   font-size: ${16 / 16}rem;
   line-height: 1.25;
+  overflow: hidden;
 
   @media ${QUERIES.phoneAndSmaller} {
     font-size: ${14 / 16}rem;

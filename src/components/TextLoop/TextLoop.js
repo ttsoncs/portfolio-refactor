@@ -64,6 +64,11 @@ const Wrapper = styled(motion.p)`
   position: absolute;
   width: fit-content;
 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  overflow: hidden;
+
   &::first-letter {
     text-transform: capitalize;
   }

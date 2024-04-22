@@ -10,8 +10,8 @@ const Wrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 1/3;
-  grid-row: 8/11;
+  grid-column: 1 / 3;
+  grid-row: 12 / -1;
   display: flex;
   flex-direction: column;
   padding: 28px;
@@ -19,8 +19,8 @@ const Wrapper = styled.section`
   align-items: center;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 2/-1;
-    grid-row: initial;
+    grid-column: 1 / 2;
+    grid-row: 18 / 22;
     padding: 24px;
   }
 `;

@@ -19,12 +19,12 @@ const Wrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 9/13;
-  grid-row: 4/7;
+  grid-column: 9 / 13;
+  grid-row: 6 / 11;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 1/-1;
-    grid-row: initial;
+    grid-column: 1 / -1;
+    grid-row: 32 / 37;
   }
 `;
 

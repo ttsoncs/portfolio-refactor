@@ -35,7 +35,7 @@ const StyledLink = styled(Link)`
   font-weight: var(--font-weight-medium);
   text-decoration: none;
   text-transform: capitalize;
-  transition: 300ms ease;
+  transition: 200ms ease;
 
   &:hover {
     border-color: var(--color-link);

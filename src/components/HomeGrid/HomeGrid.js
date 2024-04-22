@@ -21,12 +21,12 @@ function HomeGrid() {
       <ThirdGrid />
       <FourthGrid />
       <FifthGrid />
-      <NinthGrid />
       <SixthGrid />
       <Box7>7</Box7>
       <EighthGrid />
+      <NinthGrid />
       <TenthGrid />
-      <Box11>11</Box11>
+      <Box11>11</Box11>  
     </Wrapper>
   );
 }
@@ -35,11 +35,11 @@ const Wrapper = styled.main`
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(16, 1fr);
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: none;
+    grid-template-rows: repeat(45, 1fr);
   }
 `;
 
@@ -47,25 +47,12 @@ const Box7 = styled.div`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 5/9;
-  grid-row: 3/9;
+  grid-column: 5 / 9;
+  grid-row: 4 / 14;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: initial;
-    grid-row: initial;
-  }
-`;
-
-const Box9 = styled.div`
-  background-color: var(--color-box-background);
-  border-radius: 20px;
-  border: 1px dashed var(--color-border);
-  grid-column: 1/3;
-  grid-row: 8/11;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    grid-column: initial;
-    grid-row: initial;
+    grid-column: 1 / -1;
+    grid-row: 22 / 32;
   }
 `;
 
@@ -73,12 +60,12 @@ const Box11 = styled.div`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 9/13;
-  grid-row: 7/11;
+  grid-column: 9 / 13;
+  grid-row: 11 / -1;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: initial;
-    grid-row: initial;
+    grid-column: 1 / -1;
+    grid-row: 40 / -1;
   }
 `;
 

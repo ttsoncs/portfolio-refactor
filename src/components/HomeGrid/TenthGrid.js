@@ -25,8 +25,8 @@ const Wrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
   border: 1px dashed var(--color-border);
-  grid-column: 5/9;
-  grid-row: 9/11;
+  grid-column: 5 / 9;
+  grid-row: 14 / -1;
   padding: 28px;
   display: flex;
   gap: 16px;
@@ -34,8 +34,8 @@ const Wrapper = styled.section`
   width: 100%;
 
   @media ${QUERIES.phoneAndSmaller} {
-    grid-column: 1/-1;
-    grid-row: initial;
+    grid-column: 1 / -1;
+    grid-row: 37 / 40;
     padding: 24px;
   }
 `;
