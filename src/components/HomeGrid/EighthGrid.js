@@ -18,7 +18,7 @@ function EighthGrid() {
 const Wrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
-  border: 1px dashed var(--color-border);
+  border: 1px solid var(--color-border);
   grid-column: 9 / 13;
   grid-row: 6 / 11;
 

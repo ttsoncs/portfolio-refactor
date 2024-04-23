@@ -48,7 +48,7 @@ function FirstGrid() {
 const MaxWidthWrapper = styled.section`
   background-color: var(--color-box-background);
   border-radius: 20px;
-  border: 1px dashed var(--color-border);
+  border: 1px solid var(--color-border);
   grid-column: 1 / 5;
   grid-row: 1 / 7;
   padding: 28px;
