@@ -1,12 +1,12 @@
 export const COLORS = {
   white: {
-    primary: "hsl(0deg 0% 5%)",
+    primary: "hsl(0deg 0% 100%)",
     secondary: "hsl(0deg 0% 50%)",
-    tertiary: "hsl(0deg 0% 90%)",
+    tertiary: "hsl(0deg 0% 5%)",
   },
   black: {
-    primary: "hsl(0deg 0% 100%)",
-    secondary: "hsl(0deg 0% 90%)",
+    primary: "hsl(0deg 0% 5%)",
+    secondary: "hsl(0deg 0% 8%)",
   },
   primary: "hsl(220deg 100% 50%)",
   secondary: "hsl(317deg 100% 84%)",
